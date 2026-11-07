@@ -1,0 +1,1 @@
+"""ViralEat hackathon backend."""
