@@ -10,7 +10,9 @@ import {
   type ReactNode,
 } from "react";
 import { loadingErrorMessage, WorkspaceProblem } from "./workspace-errors";
+import { analysisScopeKey } from "./workspace-types";
 import type {
+  AnalysisRequest,
   RestaurantDraft,
   WorkspaceGateway,
   WorkspaceSnapshot,
@@ -33,6 +35,8 @@ const disconnectedGateway: WorkspaceGateway = {
 interface WorkspaceContextValue {
   state: WorkspaceState;
   reload: () => void;
+  startAnalysis: (input: AnalysisRequest) => Promise<void>;
+  canStartAnalysis: boolean;
   saveRestaurant: (draft: RestaurantDraft) => Promise<void>;
   setCreatorSelection: (creatorId: string, selected: boolean) => Promise<void>;
 }
@@ -74,37 +78,67 @@ export function WorkspaceProvider({
   const state =
     record.gateway === gateway ? record.state : initialState(gateway);
 
-  const refresh = useCallback((background = false) => {
-    request.current?.abort();
-    const generation = ++epoch.current;
-    const controller = new AbortController();
-    request.current = controller;
-    if (!background) setRecord({ gateway, state: initialState(gateway) });
-    if (!gateway.available) return;
+  const refresh = useCallback(
+    (background = false) => {
+      request.current?.abort();
+      const generation = ++epoch.current;
+      const controller = new AbortController();
+      request.current = controller;
+      if (!background) {
+        setRecord((current) =>
+          current.gateway === gateway && current.state.status === "ready"
+            ? current
+            : { gateway, state: initialState(gateway) },
+        );
+      }
+      if (!gateway.available) return;
 
-    void Promise.resolve()
-      .then(() => gateway.load(controller.signal))
-      .then((data) => {
-        if (controller.signal.aborted || generation !== epoch.current) return;
-        setRecord({ gateway, state: { status: "ready", data, message: null } });
-      })
-      .catch((error: unknown) => {
-        if (controller.signal.aborted || generation !== epoch.current) return;
-        setRecord({
-          gateway,
-          state: {
-            status:
-              error instanceof WorkspaceProblem && error.kind === "unavailable"
-                ? "unavailable"
-                : "error",
-            data: null,
-            message: loadingErrorMessage(error),
-          },
+      void Promise.resolve()
+        .then(() => gateway.load(controller.signal))
+        .then((data) => {
+          if (controller.signal.aborted || generation !== epoch.current) return;
+          setRecord({
+            gateway,
+            state: { status: "ready", data, message: null },
+          });
+        })
+        .catch((error: unknown) => {
+          if (controller.signal.aborted || generation !== epoch.current) return;
+          setRecord((current) => {
+            if (
+              current.gateway === gateway &&
+              current.state.status === "ready"
+            ) {
+              return {
+                gateway,
+                state: {
+                  ...current.state,
+                  message: `${loadingErrorMessage(error)} ${background ? "Automatic refresh will try again." : "Use Refresh data to try again."}`,
+                },
+              };
+            }
+            return {
+              gateway,
+              state: {
+                status:
+                  error instanceof WorkspaceProblem &&
+                  error.kind === "unavailable"
+                    ? "unavailable"
+                    : "error",
+                data: null,
+                message: loadingErrorMessage(error),
+              },
+            };
+          });
         });
-      });
-  }, [gateway]);
+    },
+    [gateway],
+  );
 
-  const reload = useCallback(() => refresh(), [refresh]);
+  const reload = useCallback(() => {
+    // A pending POST owns the next state transition. Do not invalidate its acceptance.
+    if (!pendingMutations.current.has("analysis")) refresh();
+  }, [refresh]);
 
   useEffect(() => {
     reload();
@@ -115,8 +149,12 @@ export function WorkspaceProvider({
   }, [reload]);
 
   useEffect(() => {
-    if (refreshIntervalMs <= 0 || state.status !== "ready" ||
-        state.data.analysis?.status !== "running") return;
+    if (
+      refreshIntervalMs <= 0 ||
+      state.status !== "ready" ||
+      state.data.analysis?.status !== "running"
+    )
+      return;
     const timer = window.setTimeout(() => refresh(true), refreshIntervalMs);
     return () => window.clearTimeout(timer);
   }, [state, refresh, refreshIntervalMs]);
@@ -146,6 +184,61 @@ export function WorkspaceProvider({
         },
       };
     });
+  }
+
+  async function startAnalysis(input: AnalysisRequest) {
+    const snapshot = requireWorkspace();
+    if (!gateway.startAnalysis) throw new WorkspaceProblem("unavailable");
+    if (
+      pendingMutations.current.has("analysis") ||
+      snapshot.analysis?.status === "running"
+    )
+      throw new WorkspaceProblem(
+        "conflict",
+        "An analysis is already being started or running.",
+      );
+    pendingMutations.current.add("analysis");
+    // Invalidate reads started before this write so they cannot erase the accepted run.
+    request.current?.abort();
+    const generation = ++epoch.current;
+    try {
+      const accepted = await gateway.startAnalysis(input);
+      if (generation !== epoch.current)
+        throw new WorkspaceProblem(
+          "expired",
+          "The workspace changed. The analysis may have started. Refresh data before submitting again.",
+        );
+      const sameScope =
+        snapshot.analysisRequest &&
+        analysisScopeKey(snapshot.analysisRequest) === analysisScopeKey(input);
+      updateSnapshot(snapshot.workspace.id, (current) => ({
+        ...current,
+        analysisRequest: input,
+        analysis: { ...accepted, stage: "collecting" },
+        restaurant:
+          input.kind === "benchmark"
+            ? {
+                id: "r0",
+                revision: 0,
+                name: input.restaurant.name,
+                city: input.restaurant.city,
+                competitiveArea: input.restaurant.district,
+                category: null,
+                positioning: null,
+                businessGoals: input.goals,
+                targetCustomers: [],
+                timeAvailable: null,
+                testBudget: null,
+                constraints: input.constraints.join("; ") || null,
+                socialAccounts: [],
+              }
+            : null,
+        report: sameScope ? current.report : null,
+        creators: sameScope ? current.creators : [],
+      }));
+    } finally {
+      pendingMutations.current.delete("analysis");
+    }
   }
 
   async function saveRestaurant(draft: RestaurantDraft) {
@@ -221,7 +314,14 @@ export function WorkspaceProvider({
 
   return (
     <WorkspaceContext.Provider
-      value={{ state, reload, saveRestaurant, setCreatorSelection }}
+      value={{
+        state,
+        reload,
+        startAnalysis,
+        canStartAnalysis: Boolean(gateway.startAnalysis),
+        saveRestaurant,
+        setCreatorSelection,
+      }}
     >
       {children}
     </WorkspaceContext.Provider>

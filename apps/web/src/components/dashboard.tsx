@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import { StudyDashboard } from "./study-dashboard";
 import { useState } from "react";
+import { AnalysisForm } from "@/components/analysis-form";
 import { EvidenceDialog } from "@/components/evidence-dialog";
 import { StatusPanel } from "@/components/status-panel";
 import {
@@ -121,6 +123,12 @@ export function Dashboard() {
     evidence?.reportId === report?.id
       ? report?.findings.find((finding) => finding.id === evidence?.findingId)
       : undefined;
+  if (data?.study) return (
+    <>
+      {state.message && <p className="state-note" role="alert">{state.message}</p>}
+      <StudyDashboard study={data.study} />
+    </>
+  );
   return (
     <>
       <section
@@ -169,7 +177,7 @@ export function Dashboard() {
         <StatusPanel
           title="Overview unavailable"
           action={
-            state.status === "error" ? (
+            state.status === "error" || state.status === "unavailable" ? (
               <button className="button secondary" onClick={reload}>
                 Try again
               </button>
@@ -180,6 +188,8 @@ export function Dashboard() {
         </StatusPanel>
       ) : (
         <>
+          <AnalysisForm />
+          {state.message && <p className="state-note" role="alert">{state.message}</p>}
           <LatestAnalysis
             analysis={state.data.analysis}
             hasReport={Boolean(report)}

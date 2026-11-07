@@ -21,7 +21,8 @@ export interface Source {
   observedAt: string | null;
   url: string | null;
   excerpt: string | null;
-  evidenceType: "caption" | "transcript" | "comment" | "on_screen_text" | "visual" | null;
+  evidenceType:
+    "caption" | "transcript" | "comment" | "on_screen_text" | "visual" | null;
   timestampSeconds: number | null;
   availability: "available" | "unavailable" | "removed";
 }
@@ -117,7 +118,72 @@ export interface CreatorProfile {
   selection: CreatorSelection;
 }
 
+export interface AnalysisRestaurantInput {
+  name: string;
+  city: string;
+  district: string | null;
+  handles: string[];
+}
+
+interface AnalysisFilters {
+  platforms: Platform[];
+  languages: string[];
+  country: string | null;
+}
+
+export type AnalysisRequest = AnalysisFilters &
+  (
+    | {
+        kind: "benchmark";
+        restaurant: AnalysisRestaurantInput;
+        competitors: AnalysisRestaurantInput[];
+        goals: string[];
+        constraints: string[];
+      }
+    | { kind: "market"; niche: string; city: string; topics: string[] }
+  );
+
+export interface AnalysisAccepted {
+  id: string;
+  status: "running";
+}
+
+/** Set-like filters are order independent; restaurant order defines report identities. */
+export function analysisScopeKey(value: AnalysisRequest): string {
+  const filters = {
+    platforms: [...value.platforms].sort(),
+    languages: [...value.languages].sort(),
+    country: value.country,
+  };
+  const restaurantKey = (item: AnalysisRestaurantInput) => ({
+    name: item.name,
+    city: item.city,
+    district: item.district,
+    handles: item.handles,
+  });
+  return JSON.stringify(
+    value.kind === "benchmark"
+      ? {
+          ...filters,
+          kind: value.kind,
+          restaurant: restaurantKey(value.restaurant),
+          competitors: value.competitors.map(restaurantKey),
+          goals: value.goals,
+          constraints: value.constraints,
+        }
+      : {
+          ...filters,
+          kind: value.kind,
+          niche: value.niche,
+          city: value.city,
+          topics: value.topics,
+        },
+  );
+}
+
 export interface WorkspaceSnapshot {
+  study?: import("./study-types").StudyData;
+  analysisRequest?: AnalysisRequest;
   workspace: { id: string; name: string };
   restaurant: RestaurantProfile | null;
   report: BenchmarkReport | null;
@@ -130,6 +196,7 @@ export interface WorkspaceSnapshot {
 export interface WorkspaceGateway {
   available: boolean;
   load(signal: AbortSignal): Promise<WorkspaceSnapshot>;
+  startAnalysis?(request: AnalysisRequest): Promise<AnalysisAccepted>;
   saveRestaurant(
     restaurantId: string,
     draft: RestaurantDraft,
@@ -145,4 +212,4 @@ export interface WorkspaceGateway {
 export type WorkspaceState =
   | { status: "loading"; data: null; message: null }
   | { status: "unavailable" | "error"; data: null; message: string }
-  | { status: "ready"; data: WorkspaceSnapshot; message: null };
+  | { status: "ready"; data: WorkspaceSnapshot; message: string | null };

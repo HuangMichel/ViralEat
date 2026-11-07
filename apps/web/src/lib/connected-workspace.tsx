@@ -1,12 +1,12 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { apiGateway } from "./api-gateway";
+import { studyGateway } from "./study-gateway";
 import { WorkspaceProvider } from "./workspace-context";
 
 export function ConnectedWorkspace({ children }: { children: ReactNode }) {
   return (
-    <WorkspaceProvider gateway={apiGateway} refreshIntervalMs={5000}>
+    <WorkspaceProvider gateway={studyGateway}>
       {children}
     </WorkspaceProvider>
   );

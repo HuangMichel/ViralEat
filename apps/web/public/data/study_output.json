@@ -1,0 +1,1232 @@
+{
+  "title": "Tasty Crousty: brand-account benchmark and French sector monitoring",
+  "generated_at": "2026-11-07T14:40:28.902223+00:00",
+  "limitations": [
+    "A complete export is not complete market coverage or a Paris-branch measurement."
+  ],
+  "selection_basis": {
+    "source": "real Oriane profile discovery",
+    "scope_approval": "User approved brand-account comparison instead of a Paris-branch benchmark",
+    "peer_relevance": "Restaurant brands associated with crousty/krousty; menu equivalence is a hypothesis, not proven",
+    "local_branch_verified": false,
+    "profiles": [
+      {
+        "platform": "instagram",
+        "handle": "tastycrousty",
+        "displayName": "Tasty Crousty",
+        "followersCount": 112324
+      },
+      {
+        "platform": "instagram",
+        "handle": "kroustysabaidi.fr",
+        "displayName": "Krousty Sabaidi®",
+        "followersCount": 92243
+      },
+      {
+        "platform": "instagram",
+        "handle": "croustyone_france",
+        "displayName": "Crousty One 🍚🍗",
+        "followersCount": 41742
+      },
+      {
+        "platform": "instagram",
+        "handle": "croustygame",
+        "displayName": "Crousty Game 🍚🍗",
+        "followersCount": 36098
+      },
+      {
+        "platform": "instagram",
+        "handle": "kroustyfactory.officiel",
+        "displayName": "KROUSTY FACTORY FRANCE",
+        "followersCount": 6683
+      }
+    ]
+  },
+  "analyses": [
+    {
+      "kind": "benchmark",
+      "analysis_id": "2557da21-c079-4f1c-99d3-2010edc911b7",
+      "status": "partial",
+      "oriane_requests": 5,
+      "actual_llm_tokens": 5412,
+      "sources": 10,
+      "ai_availability": "unavailable",
+      "actions": 0,
+      "warnings": [
+        "INCOMPLETE_PROVIDER_QUERY",
+        "MALFORMED_CONTENT_EXCLUDED",
+        "AI_EVIDENCE_INVALID"
+      ],
+      "error": null
+    },
+    {
+      "kind": "market",
+      "analysis_id": "3b485f74-a7dd-41b1-a728-1cf2d93b2ec6",
+      "status": "partial",
+      "oriane_requests": 4,
+      "actual_llm_tokens": 13089,
+      "sources": 4,
+      "ai_availability": "available",
+      "actions": 1,
+      "warnings": [
+        "INCOMPLETE_PROVIDER_QUERY",
+        "MALFORMED_CONTENT_EXCLUDED"
+      ],
+      "error": null
+    }
+  ],
+  "benchmark": {
+    "kind": "benchmark",
+    "method_version": "owned-account.v1",
+    "benchmark_scope": "brand_accounts",
+    "analysis_id": "2557da21-c079-4f1c-99d3-2010edc911b7",
+    "warnings": [
+      "INCOMPLETE_PROVIDER_QUERY",
+      "MALFORMED_CONTENT_EXCLUDED",
+      "AI_EVIDENCE_INVALID"
+    ],
+    "limitations": [
+      "Only confirmed restaurant-owned accounts are measured; third-party mentions are excluded.",
+      "Competitor identity/location is user-confirmed, not verified account ownership.",
+      "Brand-account comparison: declared Paris context does not isolate a Paris branch or local competitors."
+    ],
+    "configuration_snapshot": {
+      "window": {
+        "start_at": "2026-10-01T00:00:00Z",
+        "end_at": "2026-10-30T00:00:00Z"
+      },
+      "goals": [
+        "Compare observed social-account performance and identify evidence-backed content experiments"
+      ],
+      "constraints": [
+        "Example is a brand-account study, not a local Paris restaurant measurement",
+        "Production capacity, margins and customer demographics are unknown"
+      ],
+      "category_terms": [
+        "crousty",
+        "krousty"
+      ],
+      "benchmark_scope": "brand_accounts",
+      "own_restaurant": {
+        "name": "Tasty Crousty",
+        "accounts": [
+          {
+            "platform": "instagram",
+            "handle": "tastycrousty"
+          }
+        ]
+      }
+    },
+    "own_accounts": [
+      {
+        "restaurant": "Tasty Crousty",
+        "platform": "instagram",
+        "handle": "tastycrousty",
+        "metrics": {
+          "content_count": 1,
+          "mean_views": 240840,
+          "median_views": 240840,
+          "mean_engagement_views_percent": 3.535957482145823,
+          "posts_per_week": null,
+          "sampled_posts_per_week": 0.24137931034482757,
+          "posting_rate_basis": "truncated_sample_only",
+          "complete_provider_query": false,
+          "limitations": [
+            "Provider indexing is not a complete account export.",
+            "Publication-hour associations do not prove an optimal posting time.",
+            "Cumulative views depend on post age; compare like windows and platforms."
+          ]
+        }
+      }
+    ],
+    "competitor_accounts": [
+      {
+        "restaurant": "Krousty Sabaidi®",
+        "platform": "instagram",
+        "handle": "kroustysabaidi.fr",
+        "metrics": {
+          "content_count": 2,
+          "mean_views": 40766,
+          "median_views": 40766,
+          "mean_engagement_views_percent": 4.777612058790758,
+          "posts_per_week": null,
+          "sampled_posts_per_week": 0.48275862068965514,
+          "posting_rate_basis": "truncated_sample_only",
+          "complete_provider_query": false,
+          "limitations": [
+            "Provider indexing is not a complete account export.",
+            "Publication-hour associations do not prove an optimal posting time.",
+            "Cumulative views depend on post age; compare like windows and platforms."
+          ]
+        }
+      },
+      {
+        "restaurant": "Crousty One 🍚🍗",
+        "platform": "instagram",
+        "handle": "croustyone_france",
+        "metrics": {
+          "content_count": 1,
+          "mean_views": 1424,
+          "median_views": 1424,
+          "mean_engagement_views_percent": 2.5280898876404496,
+          "posts_per_week": null,
+          "sampled_posts_per_week": 0.24137931034482757,
+          "posting_rate_basis": "truncated_sample_only",
+          "complete_provider_query": false,
+          "limitations": [
+            "Provider indexing is not a complete account export.",
+            "Publication-hour associations do not prove an optimal posting time.",
+            "Cumulative views depend on post age; compare like windows and platforms."
+          ]
+        }
+      },
+      {
+        "restaurant": "Crousty Game 🍚🍗",
+        "platform": "instagram",
+        "handle": "croustygame",
+        "metrics": {
+          "content_count": 3,
+          "mean_views": null,
+          "median_views": null,
+          "mean_engagement_views_percent": null,
+          "posts_per_week": null,
+          "sampled_posts_per_week": 0.7241379310344827,
+          "posting_rate_basis": "truncated_sample_only",
+          "complete_provider_query": false,
+          "limitations": [
+            "Provider indexing is not a complete account export.",
+            "Publication-hour associations do not prove an optimal posting time.",
+            "Cumulative views depend on post age; compare like windows and platforms."
+          ]
+        }
+      },
+      {
+        "restaurant": "KROUSTY FACTORY FRANCE",
+        "platform": "instagram",
+        "handle": "kroustyfactory.officiel",
+        "metrics": {
+          "content_count": 3,
+          "mean_views": 1852,
+          "median_views": 1852,
+          "mean_engagement_views_percent": 2.9697624190064795,
+          "posts_per_week": null,
+          "sampled_posts_per_week": 0.7241379310344827,
+          "posting_rate_basis": "truncated_sample_only",
+          "complete_provider_query": false,
+          "limitations": [
+            "Provider indexing is not a complete account export.",
+            "Publication-hour associations do not prove an optimal posting time.",
+            "Cumulative views depend on post age; compare like windows and platforms."
+          ]
+        }
+      }
+    ],
+    "coverage": [
+      {
+        "restaurant": "Tasty Crousty",
+        "platform": "instagram",
+        "handle": "tastycrousty",
+        "retained_unique_contents": 1,
+        "provider_matched_total": 12,
+        "complete_provider_query": false,
+        "warnings": [
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "INCOMPLETE_PROVIDER_QUERY"
+        ],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:38:10.851451+00:00"
+          }
+        ]
+      },
+      {
+        "restaurant": "Krousty Sabaidi®",
+        "platform": "instagram",
+        "handle": "kroustysabaidi.fr",
+        "retained_unique_contents": 2,
+        "provider_matched_total": 23,
+        "complete_provider_query": false,
+        "warnings": [
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "INCOMPLETE_PROVIDER_QUERY"
+        ],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:38:11.102566+00:00"
+          }
+        ]
+      },
+      {
+        "restaurant": "Crousty One 🍚🍗",
+        "platform": "instagram",
+        "handle": "croustyone_france",
+        "retained_unique_contents": 1,
+        "provider_matched_total": 10,
+        "complete_provider_query": false,
+        "warnings": [
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "INCOMPLETE_PROVIDER_QUERY"
+        ],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:38:11.480890+00:00"
+          }
+        ]
+      },
+      {
+        "restaurant": "Crousty Game 🍚🍗",
+        "platform": "instagram",
+        "handle": "croustygame",
+        "retained_unique_contents": 3,
+        "provider_matched_total": 29,
+        "complete_provider_query": false,
+        "warnings": [
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "INCOMPLETE_PROVIDER_QUERY"
+        ],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:38:12.090381+00:00"
+          }
+        ]
+      },
+      {
+        "restaurant": "KROUSTY FACTORY FRANCE",
+        "platform": "instagram",
+        "handle": "kroustyfactory.officiel",
+        "retained_unique_contents": 3,
+        "provider_matched_total": 13,
+        "complete_provider_query": false,
+        "warnings": [
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "INCOMPLETE_PROVIDER_QUERY"
+        ],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:38:12.366925+00:00"
+          }
+        ]
+      }
+    ],
+    "peer_comparison": [
+      {
+        "platform": "instagram",
+        "availability": "insufficient_data",
+        "metric": "mean_views",
+        "own_value": 240840,
+        "local_median": null,
+        "competitor_count": 0,
+        "relative_difference_percent": null,
+        "basis": "confirmed_selected_competitors_not_entire_local_market",
+        "evidence": []
+      },
+      {
+        "platform": "instagram",
+        "availability": "insufficient_data",
+        "metric": "median_views",
+        "own_value": 240840,
+        "local_median": null,
+        "competitor_count": 0,
+        "relative_difference_percent": null,
+        "basis": "confirmed_selected_competitors_not_entire_local_market",
+        "evidence": []
+      },
+      {
+        "platform": "instagram",
+        "availability": "insufficient_data",
+        "metric": "mean_engagement_views_percent",
+        "own_value": 3.535957482145823,
+        "local_median": null,
+        "competitor_count": 0,
+        "relative_difference_percent": null,
+        "basis": "confirmed_selected_competitors_not_entire_local_market",
+        "evidence": []
+      },
+      {
+        "platform": "instagram",
+        "availability": "insufficient_data",
+        "metric": "posts_per_week",
+        "own_value": null,
+        "local_median": null,
+        "competitor_count": 0,
+        "relative_difference_percent": null,
+        "basis": "confirmed_selected_competitors_not_entire_local_market",
+        "evidence": []
+      }
+    ],
+    "trends": [],
+    "viral_candidates": [],
+    "repeatable_formats": [],
+    "product_opportunities": [],
+    "sources": [
+      {
+        "source_id": "instagram:DfCR-lNsOpM",
+        "platform": "instagram",
+        "handle": "tastycrousty",
+        "external_url": "https://www.instagram.com/p/DfCR-lNsOpM/",
+        "published_at": "2026-10-28T11:04:49+00:00",
+        "fetched_at": "2026-11-07T14:38:10.851451+00:00",
+        "followers": 112324,
+        "views": 240840,
+        "format": "video"
+      },
+      {
+        "source_id": "instagram:DfE4T6ZAGBS",
+        "platform": "instagram",
+        "handle": "kroustysabaidi.fr",
+        "external_url": "https://www.instagram.com/p/DfE4T6ZAGBS/",
+        "published_at": "2026-10-29T11:17:46+00:00",
+        "fetched_at": "2026-11-07T14:38:11.102566+00:00",
+        "followers": 92243,
+        "views": 39074,
+        "format": "video"
+      },
+      {
+        "source_id": "instagram:DfC-gsGgCnz",
+        "platform": "instagram",
+        "handle": "kroustysabaidi.fr",
+        "external_url": "https://www.instagram.com/p/DfC-gsGgCnz/",
+        "published_at": "2026-10-28T17:34:20+00:00",
+        "fetched_at": "2026-11-07T14:38:11.102566+00:00",
+        "followers": 92243,
+        "views": 42458,
+        "format": "video"
+      },
+      {
+        "source_id": "instagram:De2HNHWKo_r",
+        "platform": "instagram",
+        "handle": "croustyone_france",
+        "external_url": "https://www.instagram.com/p/De2HNHWKo_r/",
+        "published_at": "2026-10-23T17:42:02+00:00",
+        "fetched_at": "2026-11-07T14:38:11.480890+00:00",
+        "followers": 41742,
+        "views": 1424,
+        "format": "video"
+      },
+      {
+        "source_id": "instagram:De-l3pPTuPI",
+        "platform": "instagram",
+        "handle": "croustygame",
+        "external_url": "https://www.instagram.com/p/De-l3pPTuPI/",
+        "published_at": "2026-10-27T00:40:32+00:00",
+        "fetched_at": "2026-11-07T14:38:12.090381+00:00",
+        "followers": 36098,
+        "views": null,
+        "format": "image"
+      },
+      {
+        "source_id": "instagram:DeKD8atIAD3",
+        "platform": "instagram",
+        "handle": "croustygame",
+        "external_url": "https://www.instagram.com/p/DeKD8atIAD3/",
+        "published_at": "2026-10-06T15:04:06+00:00",
+        "fetched_at": "2026-11-07T14:38:12.090381+00:00",
+        "followers": 36098,
+        "views": null,
+        "format": "image"
+      },
+      {
+        "source_id": "instagram:DeCXYZFIbob",
+        "platform": "instagram",
+        "handle": "croustygame",
+        "external_url": "https://www.instagram.com/p/DeCXYZFIbob/",
+        "published_at": "2026-10-03T15:21:11+00:00",
+        "fetched_at": "2026-11-07T14:38:12.090381+00:00",
+        "followers": 36098,
+        "views": null,
+        "format": "image"
+      },
+      {
+        "source_id": "instagram:Deq3M6hOhwL",
+        "platform": "instagram",
+        "handle": "kroustyfactory.officiel",
+        "external_url": "https://www.instagram.com/p/Deq3M6hOhwL/",
+        "published_at": "2026-10-19T08:47:05+00:00",
+        "fetched_at": "2026-11-07T14:38:12.366925+00:00",
+        "followers": 6683,
+        "views": null,
+        "format": "image"
+      },
+      {
+        "source_id": "instagram:Dee7NZ0uykh",
+        "platform": "instagram",
+        "handle": "kroustyfactory.officiel",
+        "external_url": "https://www.instagram.com/p/Dee7NZ0uykh/",
+        "published_at": "2026-10-14T17:34:57+00:00",
+        "fetched_at": "2026-11-07T14:38:12.366925+00:00",
+        "followers": 6683,
+        "views": 1852,
+        "format": "video"
+      },
+      {
+        "source_id": "instagram:DeMwERuIN4J",
+        "platform": "instagram",
+        "handle": "kroustyfactory.officiel",
+        "external_url": "https://www.instagram.com/p/DeMwERuIN4J/",
+        "published_at": "2026-10-07T16:08:16+00:00",
+        "fetched_at": "2026-11-07T14:38:12.366925+00:00",
+        "followers": 6683,
+        "views": null,
+        "format": "image"
+      }
+    ],
+    "ai": {
+      "availability": "unavailable",
+      "error": {
+        "code": "AI_EVIDENCE_INVALID",
+        "message": "Price is not explicitly supported by numeric source text"
+      },
+      "actions": [],
+      "observations": []
+    }
+  },
+  "market": {
+    "kind": "market",
+    "method_version": "france-sector.v1",
+    "analysis_id": "3b485f74-a7dd-41b1-a728-1cf2d93b2ec6",
+    "warnings": [
+      "INCOMPLETE_PROVIDER_QUERY",
+      "MALFORMED_CONTENT_EXCLUDED"
+    ],
+    "limitations": [
+      "France means metropolitan bounding box plus provider-declared France address.",
+      "Geography can be content or author location; it does not establish audience geography.",
+      "Sources missing usable geography/language are excluded, creating selection bias.",
+      "Trend labels require complete matched queries, not a representative national sample.",
+      "Thresholds are exploratory: +/-20% rate change, configured source and creator minima."
+    ],
+    "product_trend_limitations": "Products are extracted from selected evidence, not a complete product census.",
+    "configuration_snapshot": {
+      "current": {
+        "start_at": "2026-10-16T00:00:00Z",
+        "end_at": "2026-10-30T00:00:00Z"
+      },
+      "previous": {
+        "start_at": "2026-09-18T00:00:00Z",
+        "end_at": "2026-10-16T00:00:00Z"
+      },
+      "category_terms": [
+        "crousty",
+        "krousty"
+      ],
+      "own_restaurant": null
+    },
+    "own_accounts": [],
+    "competitor_accounts": [],
+    "coverage": [
+      {
+        "platform": "instagram",
+        "window": "current",
+        "retained_unique_contents": 3,
+        "provider_matched_total": 13,
+        "complete_provider_query": false,
+        "warnings": [
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "INCOMPLETE_PROVIDER_QUERY"
+        ],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:39:04.223470+00:00"
+          }
+        ]
+      },
+      {
+        "platform": "tiktok",
+        "window": "current",
+        "retained_unique_contents": 0,
+        "provider_matched_total": 0,
+        "complete_provider_query": true,
+        "warnings": [],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:39:04.522399+00:00"
+          }
+        ]
+      },
+      {
+        "platform": "instagram",
+        "window": "previous",
+        "retained_unique_contents": 1,
+        "provider_matched_total": 21,
+        "complete_provider_query": false,
+        "warnings": [
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "MALFORMED_CONTENT_EXCLUDED",
+          "INCOMPLETE_PROVIDER_QUERY"
+        ],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:39:04.778229+00:00"
+          }
+        ]
+      },
+      {
+        "platform": "tiktok",
+        "window": "previous",
+        "retained_unique_contents": 0,
+        "provider_matched_total": 0,
+        "complete_provider_query": true,
+        "warnings": [],
+        "pages": [
+          {
+            "fetched_at": "2026-11-07T14:39:05.024561+00:00"
+          }
+        ]
+      }
+    ],
+    "peer_comparison": [],
+    "trends": [
+      {
+        "topic": "hashtag:camelia92",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfE4T6ZAGBS"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:creteil",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfE4T6ZAGBS"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:crousty",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:De2HNHWKo_r"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:croustyone",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:De2HNHWKo_r"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:créteil",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfE4T6ZAGBS"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:fashion",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 0,
+        "previous_count": 1,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0,
+        "previous_posts_per_day": 0.03571428571428571,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DdqKxNajSgI"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:fastfood",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfCR-lNsOpM"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:food",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfCR-lNsOpM"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:inaugration",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:De2HNHWKo_r"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:krousty",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfE4T6ZAGBS"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:kroustysabaïdi",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfE4T6ZAGBS"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:lookdujour",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 0,
+        "previous_count": 1,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0,
+        "previous_posts_per_day": 0.03571428571428571,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DdqKxNajSgI"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:mode",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 0,
+        "previous_count": 1,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0,
+        "previous_posts_per_day": 0.03571428571428571,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DdqKxNajSgI"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:outfit",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 0,
+        "previous_count": 1,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0,
+        "previous_posts_per_day": 0.03571428571428571,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DdqKxNajSgI"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:pourtoi",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:De2HNHWKo_r"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:riz",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:De2HNHWKo_r"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:tarbes",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfCR-lNsOpM"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:tastycrousty",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfCR-lNsOpM"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "hashtag:tenuedujour",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 0,
+        "previous_count": 1,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0,
+        "previous_posts_per_day": 0.03571428571428571,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DdqKxNajSgI"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "keyword:crousty",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 2,
+        "previous_count": 1,
+        "distinct_creators": 3,
+        "current_posts_per_day": 0.14285714285714285,
+        "previous_posts_per_day": 0.03571428571428571,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DdqKxNajSgI",
+          "instagram:De2HNHWKo_r",
+          "instagram:DfCR-lNsOpM"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "keyword:krousty",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:DfE4T6ZAGBS"
+        ],
+        "evidence": []
+      },
+      {
+        "topic": "keyword:riz",
+        "platform": "instagram",
+        "status": "insufficient_data",
+        "current_count": 1,
+        "previous_count": 0,
+        "distinct_creators": 1,
+        "current_posts_per_day": 0.07142857142857142,
+        "previous_posts_per_day": 0,
+        "growth_percent": null,
+        "abstention_reason": "zero_baseline_or_insufficient_independent_sources_or_incomplete_collection",
+        "source_ids": [
+          "instagram:De2HNHWKo_r"
+        ],
+        "evidence": []
+      }
+    ],
+    "viral_candidates": [],
+    "repeatable_formats": [],
+    "product_opportunities": [
+      {
+        "label": "Croustyone Roubaix opening offer: entire menu advertised at €5",
+        "platform": "instagram",
+        "source_id": "instagram:De2HNHWKo_r",
+        "limitations": [
+          "Novelty is source-reported, not independent proof of a launch."
+        ],
+        "price_amount": "5",
+        "currency": "EUR",
+        "novelty_status": "announced_launch",
+        "published_at": "2026-10-23T17:42:02+00:00",
+        "observed_at": "2026-11-07T14:39:04.223470+00:00",
+        "announced_launch_at": null,
+        "evidence": [
+          {
+            "source_id": "instagram:De2HNHWKo_r",
+            "channel": "caption"
+          },
+          {
+            "source_id": "instagram:De2HNHWKo_r",
+            "channel": "caption"
+          }
+        ]
+      },
+      {
+        "label": "Croustyone Roubaix opening prizes: 100 Riz Crousty, PS5, games and an electric scooter",
+        "platform": "instagram",
+        "source_id": "instagram:De2HNHWKo_r",
+        "limitations": [
+          "Novelty is source-reported, not independent proof of a launch."
+        ],
+        "price_amount": null,
+        "currency": null,
+        "novelty_status": "announced_launch",
+        "published_at": "2026-10-23T17:42:02+00:00",
+        "observed_at": "2026-11-07T14:39:04.223470+00:00",
+        "announced_launch_at": null,
+        "evidence": [
+          {
+            "source_id": "instagram:De2HNHWKo_r",
+            "channel": "caption"
+          },
+          {
+            "source_id": "instagram:De2HNHWKo_r",
+            "channel": "caption"
+          }
+        ]
+      },
+      {
+        "label": "Krousty Sabaïdi Créteil opening offer: 300 Kroustys given away",
+        "platform": "instagram",
+        "source_id": "instagram:DfE4T6ZAGBS",
+        "limitations": [
+          "Novelty is source-reported, not independent proof of a launch."
+        ],
+        "price_amount": null,
+        "currency": null,
+        "novelty_status": "announced_launch",
+        "published_at": "2026-10-29T11:17:46+00:00",
+        "observed_at": "2026-11-07T14:39:04.223470+00:00",
+        "announced_launch_at": null,
+        "evidence": [
+          {
+            "source_id": "instagram:DfE4T6ZAGBS",
+            "channel": "caption"
+          },
+          {
+            "source_id": "instagram:DfE4T6ZAGBS",
+            "channel": "caption"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "source_id": "instagram:DfE4T6ZAGBS",
+        "platform": "instagram",
+        "handle": "kroustysabaidi.fr",
+        "external_url": "https://www.instagram.com/p/DfE4T6ZAGBS/",
+        "published_at": "2026-10-29T11:17:46+00:00",
+        "fetched_at": "2026-11-07T14:39:04.223470+00:00",
+        "followers": 92243,
+        "views": 39074,
+        "format": "video"
+      },
+      {
+        "source_id": "instagram:DfCR-lNsOpM",
+        "platform": "instagram",
+        "handle": "tastycrousty",
+        "external_url": "https://www.instagram.com/p/DfCR-lNsOpM/",
+        "published_at": "2026-10-28T11:04:49+00:00",
+        "fetched_at": "2026-11-07T14:39:04.223470+00:00",
+        "followers": 112324,
+        "views": 240840,
+        "format": "video"
+      },
+      {
+        "source_id": "instagram:De2HNHWKo_r",
+        "platform": "instagram",
+        "handle": "croustyone_france",
+        "external_url": "https://www.instagram.com/p/De2HNHWKo_r/",
+        "published_at": "2026-10-23T17:42:02+00:00",
+        "fetched_at": "2026-11-07T14:39:04.223470+00:00",
+        "followers": 41742,
+        "views": 1424,
+        "format": "video"
+      },
+      {
+        "source_id": "instagram:DdqKxNajSgI",
+        "platform": "instagram",
+        "handle": "poline.shinel",
+        "external_url": "https://www.instagram.com/p/DdqKxNajSgI/",
+        "published_at": "2026-09-24T05:47:20+00:00",
+        "fetched_at": "2026-11-07T14:39:04.778229+00:00",
+        "followers": 39298,
+        "views": null,
+        "format": "carousel"
+      }
+    ],
+    "ai": {
+      "availability": "available",
+      "limitations": [
+        "Ne pas généraliser ce choix de rédaction à l’ensemble du marché ni le présenter comme une préférence de l’algorithme.",
+        "Les adresses citées ne permettent pas de déterminer la géographie de l’audience.",
+        "La faisabilité et l’utilité du test restent conditionnées à la validation des objectifs, des ressources et de l’accès à la métrique."
+      ],
+      "error": null,
+      "actions": [
+        {
+          "observation": "Deux légendes incluent une adresse précise : instagram:DfCR-lNsOpM / caption et instagram:DfE4T6ZAGBS / caption, citées ci-dessous. Ce choix rédactionnel ne démontre pas son efficacité.",
+          "hypothesis": "Placer les informations pratiques au début plutôt qu’à la fin d’une légende pourrait modifier l’engagement rapporté aux vues. L’effet reste à tester.",
+          "proposed_action": "Uniquement si un objectif d’engagement Instagram est validé, préparer deux paires de publications originales sur des sujets comparables. Variante A : adresse et horaires vérifiés en début de légende ; variante B : mêmes informations en fin de légende. Alterner les variantes et conserver autant que possible un format et une longueur comparables. Ne créer ni remise ni événement pour ce test. Faire valider puis publier manuellement, sans reprendre les créations des concurrents.",
+          "effort": "Faible à modéré, sous réserve de disposer de visuels originaux : quatre adaptations de légendes, validation des informations et relevé des résultats. Aucun achat média nécessaire au protocole.",
+          "outcome_measure": "À sept jours après chaque publication, comparer le taux moyen d’engagement rapporté aux vues (%) entre les variantes. Utiliser une définition identique pour toutes les publications. Considérer toute différence comme un signal exploratoire à vérifier, non comme une victoire établie.",
+          "constraints_to_check": [
+            "Confirmer que l’engagement Instagram correspond à l’objectif prioritaire du restaurant.",
+            "Valider la capacité à préparer quatre publications comparables et les droits sur les visuels utilisés.",
+            "Vérifier l’adresse, les horaires et leur pertinence pour les publications.",
+            "Confirmer l’accès au taux d’engagement rapporté aux vues, avec la même définition de calcul que la métrique fournie ; sinon, ne pas lancer ce protocole."
+          ],
+          "limitations": [
+            "Les citations justifient le choix d’un élément à tester, pas une attente chiffrée de performance.",
+            "Quatre publications ne permettraient pas d’isoler solidement l’effet du placement : le sujet, le visuel ou la diffusion pourraient aussi contribuer aux différences.",
+            "Ce résultat ne mesurerait ni les visites au restaurant, ni le chiffre d’affaires, ni la rentabilité."
+          ],
+          "evidence": [
+            {
+              "source_id": "instagram:DfCR-lNsOpM",
+              "channel": "caption"
+            },
+            {
+              "source_id": "instagram:DfE4T6ZAGBS",
+              "channel": "caption"
+            }
+          ]
+        }
+      ],
+      "observations": [
+        {
+          "source_id": "instagram:DfCR-lNsOpM",
+          "limitations": [
+            "Only a caption and comments are supplied; no spoken transcript or on-screen narrative is available.",
+            "The caption does not specify ingredients, a calendar date, quantities, or further eligibility conditions.",
+            "The free offer is not expressed as a numeric price with a currency, so both price fields are null.",
+            "Comments are reactions and requests for locations, not verified visits."
+          ]
+        },
+        {
+          "source_id": "instagram:DfE4T6ZAGBS",
+          "limitations": [
+            "Only a caption is supplied; no spoken transcript or on-screen narrative is available.",
+            "The explicit launch announcement concerns the restaurant opening, not a new recipe or invention.",
+            "The stated event date has no year; no commercial product-launch date is established.",
+            "No ingredients or numeric price with a currency are provided. The number 300 is a giveaway quantity, not a price."
+          ]
+        },
+        {
+          "source_id": "instagram:De2HNHWKo_r",
+          "limitations": [
+            "Only a caption is supplied; no spoken transcript or on-screen narrative is available.",
+            "The launch status refers to the explicitly announced restaurant opening, not a new dish or invention. No year is supplied.",
+            "No ingredient breakdown or detailed terms for the €5 menu offer are provided.",
+            "The caption lists prizes to win but does not specify the allocation mechanism or guarantee food for every attendee."
+          ]
+        },
+        {
+          "source_id": "instagram:DdqKxNajSgI",
+          "limitations": [
+            "Tasty Crousty appears only as an incidental reference in a personal red-flag discussion; no specific restaurant product or offer is described.",
+            "Only a caption and comments are supplied. The caption's opinion-and-question structure cannot be verified as spoken or on-screen narration.",
+            "Comments are reactions, not verified restaurant visits."
+          ]
+        }
+      ]
+    }
+  }
+}

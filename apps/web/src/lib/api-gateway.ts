@@ -1,4 +1,5 @@
 import { platformLabel, safeSourceUrl } from "./format";
+import { analysisScopeKey } from "./workspace-types";
 import { WorkspaceProblem } from "./workspace-errors";
 import type {
   AnalysisStatus,
@@ -96,15 +97,7 @@ function request(value: unknown) {
   throw new WorkspaceProblem("invalid");
 }
 type Request = ReturnType<typeof request>;
-function scopeKey(value: Request): string {
-  // Object keys are constructed above. Sort set-like filters, while retaining restaurant order (r0, r1...).
-  const normalized = {
-    ...value,
-    platforms: [...value.platforms].sort(),
-    languages: [...value.languages].sort(),
-  };
-  return JSON.stringify(normalized);
-}
+
 function analysis(value: unknown) {
   const item = object(value);
   if (
@@ -476,14 +469,62 @@ function creators(
   return [...result.values()];
 }
 
-/** The hackathon service exposes reads only for this interface; no paid analysis is started. */
+/** Typed adapter for the hackathon service. Starts run only after an explicit user action. */
 export function createApiGateway(
   baseUrl: string,
   fetchImpl: typeof fetch = (...args) => fetch(...args),
 ): WorkspaceGateway {
   const base = baseUrl.replace(/\/+$/, "");
+  let selectedAnalysisId: string | null = null;
   return {
     available: true,
+    async startAnalysis(input) {
+      // A new submission may be accepted even if its response is lost. The next
+      // recovery refresh must discover that run rather than stay pinned to an older one.
+      selectedAnalysisId = null;
+      let response: Response;
+      try {
+        response = await fetchImpl(`${base}/analyses`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(input),
+        });
+      } catch {
+        throw new WorkspaceProblem(
+          "unknown",
+          "The connection failed. The analysis may have started. Refresh data before submitting again.",
+        );
+      }
+      const errors: Record<number, string> = {
+        429: "An analysis is already running. Refresh data to follow its progress.",
+        503: "The analysis service is not configured. Ask the service operator to check its provider configuration.",
+        422: "The service rejected these analysis settings. Check the required fields and four distinct competitors.",
+      };
+      if (response.status !== 202) {
+        throw new WorkspaceProblem(
+          "unknown",
+          errors[response.status] ??
+            `The service returned HTTP ${response.status}. The analysis may have started. Refresh data before submitting again.`,
+        );
+      }
+      try {
+        const accepted = object(await response.json());
+        const id = text(accepted.id);
+        if (
+          !id.trim() ||
+          accepted.status !== "running" ||
+          accepted.status_url !== `/analyses/${id}`
+        )
+          throw new WorkspaceProblem("invalid");
+        selectedAnalysisId = id;
+        return { id, status: "running" };
+      } catch {
+        throw new WorkspaceProblem(
+          "invalid",
+          "The service returned an invalid acceptance response. The analysis may have started. Refresh data before submitting again.",
+        );
+      }
+    },
     async load(signal) {
       async function get(path: string, allowMissing = false): Promise<unknown> {
         const response = await fetchImpl(`${base}${path}`, {
@@ -504,9 +545,16 @@ export function createApiGateway(
           (left, right) =>
             Date.parse(right.createdAt) - Date.parse(left.createdAt),
         );
-      const latest = analyses[0];
+      // Follow the explicitly submitted run even if another client creates a newer one.
+      const latest = selectedAnalysisId
+        ? (analyses.find((item) => item.id === selectedAnalysisId) ??
+          analysis(
+            await get(`/analyses/${encodeURIComponent(selectedAnalysisId)}`),
+          ))
+        : analyses[0];
       const empty: WorkspaceSnapshot = {
         workspace: { id: "api", name: "ViralEat" },
+        analysisRequest: latest?.request,
         restaurant: latest ? profile(latest.request) : null,
         report: null,
         analysis: latest
@@ -525,12 +573,17 @@ export function createApiGateway(
         permissions: { editRestaurant: false, selectCreators: false },
       };
       if (!latest) return empty;
-      const successful = analyses.find(
-        (item) =>
-          item.status === "done" &&
-          item.report !== null &&
-          scopeKey(item.request) === scopeKey(latest.request),
-      );
+      const successful =
+        latest.status === "done" && latest.report !== null
+          ? latest
+          : analyses.find(
+              (item) =>
+                Date.parse(item.createdAt) <= Date.parse(latest.createdAt) &&
+                item.status === "done" &&
+                item.report !== null &&
+                analysisScopeKey(item.request) ===
+                  analysisScopeKey(latest.request),
+            );
       if (!successful) return empty;
       const ids = referencedSources(successful.report!);
       const observed = new Map<string, ObservedSource | null>();

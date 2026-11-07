@@ -52,7 +52,13 @@ export function RestaurantProfilePage() {
       </section>
     );
   }
-  const { restaurant, report, permissions } = state.data;
+  const { restaurant, report, permissions, study } = state.data;
+  const ownSources = state.data.creators
+    .filter(creator => restaurant?.socialAccounts.some(account =>
+      account.platform === creator.platform &&
+      account.handle.toLowerCase() === creator.handle.toLowerCase(),
+    ))
+    .flatMap(creator => creator.sources);
   if (!restaurant) {
     return (
       <section>
@@ -124,7 +130,7 @@ export function RestaurantProfilePage() {
         <div>
           <div className="section-title">
             <h2>Restaurant details</h2>
-            <span className="declared">Declared by the owner</span>
+            <span className="declared">{study ? "Supplied study configuration" : "Declared by the owner"}</span>
           </div>
           <dl className="profile-list">
             <div>
@@ -203,7 +209,13 @@ export function RestaurantProfilePage() {
           </details>
         </div>
         <div>
-          {!report || report.coverage === "empty" ? (
+          {study ? (
+            <div className="data-results own-content">
+              <h2>Study coverage</h2>
+              <p>{formatNumber(new Set(ownSources.map(source => source.id)).size)} distinct supplied posts from the restaurant account.</p>
+              <p className="small muted">This brand account collection does not establish local branch performance, customer demographics, visits, or revenue.</p>
+            </div>
+          ) : !report || report.coverage === "empty" ? (
             <StatusPanel
               title={
                 report
@@ -275,7 +287,7 @@ export function RestaurantProfilePage() {
                 </p>
               </>
             ) : (
-              <p>Profile changes apply to future analyses.</p>
+              <p>{study ? "This profile reflects the saved study configuration. Editing is unavailable." : "Profile changes apply to future analyses."}</p>
             )}
           </div>
           <details className="details">

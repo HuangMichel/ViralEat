@@ -64,7 +64,7 @@ export function CreatorProfilePage() {
       </section>
     );
   }
-  const { creators, permissions } = state.data;
+  const { creators, permissions, study } = state.data;
   const creator = creators.find((item) => item.id === creatorId) ?? creators[0];
   if (!creator) {
     return (
@@ -145,7 +145,7 @@ export function CreatorProfilePage() {
     <section className="screen" aria-labelledby="creator-title">
       {creators.length > 1 && (
         <div className="state-control">
-          <label htmlFor="creator-picker">Creator account</label>
+          <label htmlFor="creator-picker">{study ? "Source author account" : "Creator account"}</label>
           <select
             id="creator-picker"
             value={creator.id}
@@ -167,6 +167,7 @@ export function CreatorProfilePage() {
       )}
       <div className="hero profile-hero">
         <div className="hero-copy">
+          {study && <p className="coverage-note">Observed source accounts can represent restaurant brands. These profiles are not collaboration recommendations.</p>}
           <h1 id="creator-title" className="creator-profile-name">
             {creator.displayName}
           </h1>
@@ -318,7 +319,7 @@ export function CreatorProfilePage() {
                 </dd>
               </div>
               <div>
-                <dt>Audience size</dt>
+                <dt>Follower count</dt>
                 <dd>
                   {formatNumber(creator.followerCount)}
                   {creator.followerCount !== null && (
@@ -340,18 +341,18 @@ export function CreatorProfilePage() {
           </div>
           {hasAvailableEvidence && (
             <div className="selection-note">
-              <h3>Selection reason</h3>
+              <h3>{study ? "Study inclusion" : "Selection reason"}</h3>
               <p>
                 {creator.selectionReason ||
                   "A selection reason has not been supplied. Review the associated content before deciding."}
               </p>
-              <p>Collaboration results are unknown.</p>
+              {!study && <p>Collaboration results are unknown.</p>}
             </div>
           )}
-          <div className="selection-note">
+          {!study && <div className="selection-note">
             <h3>Saved selection</h3>
             <p>Saving a selection does not contact this creator.</p>
-          </div>
+          </div>}
         </aside>
       </div>
       <EvidenceDialog

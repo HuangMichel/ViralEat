@@ -1,4 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
+import type { AnalysisRequest } from "@/lib/workspace-types";
 import { createApiGateway } from "@/lib/api-gateway";
 
 // Synthetic backend payloads, isolated from application routes and provider data.
@@ -438,4 +439,79 @@ describe("read-only API gateway", () => {
     expect(aspect?.count).toBeNull();
     expect(aspect?.description).toContain("2 observed mentions");
   });
+});
+
+describe("submitted analysis selection", () => {
+  const submission: AnalysisRequest = {
+    ...request(),
+    kind: "benchmark",
+    platforms: ["instagram", "tiktok"],
+  };
+  const accepted = {
+    id: "selected",
+    status: "running",
+    status_url: "/analyses/selected",
+  };
+
+  it("shows a completed selected detail report when the list temporarily omits it", async () => {
+    const fetcher = mockFetch([]);
+    fetcher.mockImplementation(async (input, init) => {
+      const url = String(input);
+      if (init?.method === "POST")
+        return new Response(JSON.stringify(accepted), { status: 202 });
+      if (url.endsWith("/analyses")) return new Response("[]");
+      if (url.endsWith("/analyses/selected"))
+        return new Response(JSON.stringify(analysis({ id: "selected" })));
+      return new Response(JSON.stringify(source()));
+    });
+    const service = createApiGateway("https://synthetic.test", fetcher);
+    await service.startAnalysis!(submission);
+    const result = await service.load(signal());
+    expect(result.analysis?.id).toBe("selected");
+    expect(result.analysis?.status).toBe("succeeded");
+    expect(result.report?.id).toBe("selected");
+  });
+
+  it("follows the selected run instead of another client's newer analysis", async () => {
+    const fetcher = mockFetch([
+      analysis({ id: "selected" }),
+      analysis({ id: "other", created_at: "2026-11-02T10:00:00Z" }),
+    ]);
+    fetcher.mockResolvedValueOnce(
+      new Response(JSON.stringify(accepted), { status: 202 }),
+    );
+    const service = createApiGateway("https://synthetic.test", fetcher);
+    await service.startAnalysis!(submission);
+    expect((await service.load(signal())).analysis?.id).toBe("selected");
+  });
+
+  it.each(["network", "invalid", "busy"])(
+    "discovers a possible new run after %s recovery rather than staying pinned to an older run",
+    async (failure) => {
+      const fetcher = mockFetch([
+        analysis({ id: "selected" }),
+        analysis({
+          id: "new-run",
+          status: "running",
+          report: null,
+          created_at: "2026-11-02T10:00:00Z",
+        }),
+      ]);
+      fetcher.mockResolvedValueOnce(
+        new Response(JSON.stringify(accepted), { status: 202 }),
+      );
+      const service = createApiGateway("https://synthetic.test", fetcher);
+      await service.startAnalysis!(submission);
+      if (failure === "network")
+        fetcher.mockRejectedValueOnce(new TypeError("network"));
+      else
+        fetcher.mockResolvedValueOnce(
+          new Response("{}", { status: failure === "busy" ? 429 : 202 }),
+        );
+      await expect(service.startAnalysis!(submission)).rejects.toThrow();
+      const recovered = await service.load(signal());
+      expect(recovered.analysis?.id).toBe("new-run");
+      expect(recovered.analysis?.status).toBe("running");
+    },
+  );
 });
