@@ -1,0 +1,1230 @@
+{
+ "scope": "tiktok/instagram, language fr or located in France, last 90 days, top 80 by views fetched, 50 most-viewed relevant kept",
+ "niche_terms": [
+  "poulet croustillant",
+  "tenders",
+  "crousty",
+  "krousty"
+ ],
+ "note": "post_url is rebuilt from platform ids; views are observed counters, not unique people or sales.",
+ "posts": [
+  {
+   "rank": 1,
+   "id": "tiktok:7698456095588846871",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@flunchfrance/video/7698456095588846871",
+   "author_handle": "flunchfrance",
+   "author_is_restaurant": true,
+   "views": 16000000,
+   "published_at": "2026-10-19T19:01:32+00:00",
+   "restaurants": [
+    {
+     "handle": "flunchfrance",
+     "display_name": "flunchfrance",
+     "profile_url": "https://www.tiktok.com/@flunchfrance"
+    }
+   ],
+   "marketing_concepts": [
+    "promo_or_giveaway"
+   ],
+   "restaurant_concepts": [
+    "size_or_portion_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 2,
+   "id": "instagram:DcYNz4BA2Yy",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/DcYNz4BA2Yy/",
+   "author_handle": "kroustysabaidi.fr",
+   "author_is_restaurant": true,
+   "views": 7889825,
+   "published_at": "2026-08-23T09:58:27+00:00",
+   "restaurants": [
+    {
+     "handle": "kroustysabaidi.fr",
+     "display_name": "Krousty Sabaidi®",
+     "profile_url": "https://www.instagram.com/kroustysabaidi.fr/"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "multiple_locations",
+    "new_opening",
+    "other"
+   ]
+  },
+  {
+   "rank": 3,
+   "id": "tiktok:7686897090382875937",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@dymanpasplus/video/7686897090382875937",
+   "author_handle": "dymanpasplus",
+   "author_is_restaurant": false,
+   "views": 5000000,
+   "published_at": "2026-09-18T15:26:43+00:00",
+   "restaurants": [
+    {
+     "handle": "kfc_france",
+     "display_name": "KFC France",
+     "profile_url": "https://www.instagram.com/kfc_france/"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "crispy_texture_focus",
+    "signature_sauce",
+    "size_or_portion_format"
+   ]
+  },
+  {
+   "rank": 4,
+   "id": "tiktok:7692476697517640992",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@leavgz_cooking/video/7692476697517640992",
+   "author_handle": "leavgz_cooking",
+   "author_is_restaurant": false,
+   "views": 4200000,
+   "published_at": "2026-10-03T16:18:27+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "meme_or_trend_format"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 5,
+   "id": "tiktok:7686897374882467104",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@johnatable/video/7686897374882467104",
+   "author_handle": "johnatable",
+   "author_is_restaurant": false,
+   "views": 3700000,
+   "published_at": "2026-09-18T15:27:48+00:00",
+   "restaurants": [
+    {
+     "handle": "flunchfrance",
+     "display_name": "flunchfrance",
+     "profile_url": "https://www.tiktok.com/@flunchfrance"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch",
+    "price_or_value_test",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "crispy_texture_focus",
+    "size_or_portion_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 6,
+   "id": "tiktok:7692841735000558880",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@leavgz_cooking/video/7692841735000558880",
+   "author_handle": "leavgz_cooking",
+   "author_is_restaurant": false,
+   "views": 2700000,
+   "published_at": "2026-10-04T15:54:57+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "price_or_value_test",
+    "recipe_copycat"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations",
+    "signature_sauce"
+   ]
+  },
+  {
+   "rank": 7,
+   "id": "instagram:DcdAFMiOWlz",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/DcdAFMiOWlz/",
+   "author_handle": "otacos",
+   "author_is_restaurant": true,
+   "views": 2184123,
+   "published_at": "2026-08-25T06:32:41+00:00",
+   "restaurants": [
+    {
+     "handle": "otacos",
+     "display_name": "O'TACOS",
+     "profile_url": "https://www.instagram.com/otacos/"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch"
+   ],
+   "restaurant_concepts": [
+    "korean_style",
+    "multiple_locations",
+    "other",
+    "rice_bowl_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 8,
+   "id": "tiktok:7677164533328219424",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@kroustysabaidi.fr/video/7677164533328219424",
+   "author_handle": "kroustysabaidi.fr",
+   "author_is_restaurant": true,
+   "views": 2000000,
+   "published_at": "2026-08-23T09:59:25+00:00",
+   "restaurants": [
+    {
+     "handle": "kroustysabaidi.fr",
+     "display_name": "Krousty Sabaidi®",
+     "profile_url": "https://www.instagram.com/kroustysabaidi.fr/"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "multiple_locations",
+    "new_opening",
+    "other"
+   ]
+  },
+  {
+   "rank": 9,
+   "id": "tiktok:7686568757761789217",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@onmangequoi.fr/video/7686568757761789217",
+   "author_handle": "onmangequoi.fr",
+   "author_is_restaurant": false,
+   "views": 2000000,
+   "published_at": "2026-09-17T18:12:34+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "halal",
+    "homemade_or_fresh",
+    "size_or_portion_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 10,
+   "id": "tiktok:7685063402418425120",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@.madame..a/video/7685063402418425120",
+   "author_handle": ".madame..a",
+   "author_is_restaurant": false,
+   "views": 2000000,
+   "published_at": "2026-09-13T16:51:02+00:00",
+   "restaurants": [
+    {
+     "handle": "welldone.off",
+     "display_name": "Welldone.off",
+     "profile_url": "https://www.tiktok.com/@welldone.off"
+    }
+   ],
+   "marketing_concepts": [
+    "prank_or_skit"
+   ],
+   "restaurant_concepts": [
+    "burger_or_sandwich_format",
+    "low_price_entry",
+    "multiple_locations",
+    "size_or_portion_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 11,
+   "id": "instagram:DeFAnehuHk2",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/DeFAnehuHk2/",
+   "author_handle": "leavgz_cooking",
+   "author_is_restaurant": false,
+   "views": 1979727,
+   "published_at": "2026-10-04T15:59:03+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "kitchen_or_making_of",
+    "recipe_copycat"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 12,
+   "id": "instagram:DeRIxy_j8_T",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/DeRIxy_j8_T/",
+   "author_handle": "lhumanitefr",
+   "author_is_restaurant": false,
+   "views": 1948582,
+   "published_at": "2026-10-09T09:02:39+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "prank_or_skit"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 13,
+   "id": "instagram:DePSj1wIZRL",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/DePSj1wIZRL/",
+   "author_handle": "reporterre_media",
+   "author_is_restaurant": false,
+   "views": 1922804,
+   "published_at": "2026-10-08T15:49:17+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 14,
+   "id": "tiktok:7676120894217014560",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@johnatable/video/7676120894217014560",
+   "author_handle": "johnatable",
+   "author_is_restaurant": false,
+   "views": 1900000,
+   "published_at": "2026-08-20T14:29:33+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "challenge",
+    "mukbang_eating"
+   ],
+   "restaurant_concepts": [
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 15,
+   "id": "tiktok:7689105941492665608",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@gengduck/video/7689105941492665608",
+   "author_handle": "gengduck",
+   "author_is_restaurant": false,
+   "views": 1900000,
+   "published_at": "2026-09-24T14:18:11+00:00",
+   "restaurants": [
+    {
+     "handle": "kroustysabaidi.fr",
+     "display_name": "Krousty Sabaidi®",
+     "profile_url": "https://www.instagram.com/kroustysabaidi.fr/"
+    }
+   ],
+   "marketing_concepts": [
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations",
+    "new_opening",
+    "other",
+    "size_or_portion_format"
+   ]
+  },
+  {
+   "rank": 16,
+   "id": "tiktok:7690998058221440288",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@sofiaa_smh/video/7690998058221440288",
+   "author_handle": "sofiaa_smh",
+   "author_is_restaurant": false,
+   "views": 1900000,
+   "published_at": "2026-09-29T16:40:33+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "creator_visit_or_collab",
+    "kitchen_or_making_of",
+    "new_product_or_launch"
+   ],
+   "restaurant_concepts": [
+    "rice_bowl_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 17,
+   "id": "tiktok:7694365400116596001",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@larzizealanaa/video/7694365400116596001",
+   "author_handle": "larzizealanaa",
+   "author_is_restaurant": false,
+   "views": 1800000,
+   "published_at": "2026-10-08T18:27:33+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "prank_or_skit"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 18,
+   "id": "tiktok:7694346734935362848",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@leavgz_cooking/video/7694346734935362848",
+   "author_handle": "leavgz_cooking",
+   "author_is_restaurant": false,
+   "views": 1700000,
+   "published_at": "2026-10-08T17:15:08+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 19,
+   "id": "tiktok:7698410011537542432",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@matosbeatbox/video/7698410011537542432",
+   "author_handle": "matosbeatbox",
+   "author_is_restaurant": false,
+   "views": 1600000,
+   "published_at": "2026-10-19T16:02:43+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "mukbang_eating"
+   ],
+   "restaurant_concepts": [
+    "korean_style",
+    "rice_bowl_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 20,
+   "id": "tiktok:7689490953845050657",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@rohvn.509/video/7689490953845050657",
+   "author_handle": "rohvn.509",
+   "author_is_restaurant": false,
+   "views": 1600000,
+   "published_at": "2026-09-25T15:12:14+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "prank_or_skit"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 21,
+   "id": "tiktok:7689519655165398305",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@mrzbil/video/7689519655165398305",
+   "author_handle": "mrzbil",
+   "author_is_restaurant": false,
+   "views": 1500000,
+   "published_at": "2026-09-25T17:03:35+00:00",
+   "restaurants": [
+    {
+     "handle": "bigm.officiel",
+     "display_name": "BIG M OFFICIEL",
+     "profile_url": "https://www.tiktok.com/@bigm.officiel"
+    }
+   ],
+   "marketing_concepts": [
+    "mukbang_eating",
+    "price_or_value_test"
+   ],
+   "restaurant_concepts": [
+    "burger_or_sandwich_format",
+    "halal",
+    "multiple_locations",
+    "size_or_portion_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 22,
+   "id": "tiktok:7697213348651289889",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@ana.hnf/video/7697213348651289889",
+   "author_handle": "ana.hnf",
+   "author_is_restaurant": false,
+   "views": 1500000,
+   "published_at": "2026-10-16T10:39:05+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "challenge",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 23,
+   "id": "tiktok:7680570459246611733",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@krousty_factory/video/7680570459246611733",
+   "author_handle": "krousty_factory",
+   "author_is_restaurant": false,
+   "views": 1500000,
+   "published_at": "2026-09-01T14:16:09+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "promo_or_giveaway"
+   ],
+   "restaurant_concepts": []
+  },
+  {
+   "rank": 24,
+   "id": "tiktok:7701301313153420577",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@fastgoodcuisine/video/7701301313153420577",
+   "author_handle": "fastgoodcuisine",
+   "author_is_restaurant": false,
+   "views": 1400000,
+   "published_at": "2026-10-27T11:02:28+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "challenge",
+    "new_product_or_launch",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 25,
+   "id": "tiktok:7688236450743061793",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@otacosreunion/video/7688236450743061793",
+   "author_handle": "otacosreunion",
+   "author_is_restaurant": true,
+   "views": 1400000,
+   "published_at": "2026-09-22T06:03:43+00:00",
+   "restaurants": [
+    {
+     "handle": "otacosreunion",
+     "display_name": "otacosreunion",
+     "profile_url": "https://www.instagram.com/otacosreunion/"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch",
+    "prank_or_skit"
+   ],
+   "restaurant_concepts": [
+    "low_price_entry",
+    "multiple_locations",
+    "size_or_portion_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 26,
+   "id": "instagram:De-gieao7ZJ",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/De-gieao7ZJ/",
+   "author_handle": "kroustysabaidi.fr",
+   "author_is_restaurant": true,
+   "views": 1360909,
+   "published_at": "2026-10-26T23:54:29+00:00",
+   "restaurants": [
+    {
+     "handle": "kroustysabaidi.fr",
+     "display_name": "Krousty Sabaidi®",
+     "profile_url": "https://www.instagram.com/kroustysabaidi.fr/"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "multiple_locations",
+    "new_opening",
+    "other"
+   ]
+  },
+  {
+   "rank": 27,
+   "id": "tiktok:7685453846973386016",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@croustyone_france/video/7685453846973386016",
+   "author_handle": "croustyone_france",
+   "author_is_restaurant": true,
+   "views": 1300000,
+   "published_at": "2026-09-14T18:06:09+00:00",
+   "restaurants": [
+    {
+     "handle": "croustyone_france",
+     "display_name": "Crousty One 🍚🍗",
+     "profile_url": "https://www.instagram.com/croustyone_france/"
+    }
+   ],
+   "marketing_concepts": [
+    "meme_or_trend_format"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 28,
+   "id": "instagram:DdrQ_FUxEaA",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/DdrQ_FUxEaA/",
+   "author_handle": "parissecret",
+   "author_is_restaurant": false,
+   "views": 1228502,
+   "published_at": "2026-09-24T16:00:14+00:00",
+   "restaurants": [
+    {
+     "handle": "sheesh_",
+     "display_name": "Sheesh by Danny Khezzar",
+     "profile_url": "https://www.instagram.com/sheesh_/"
+    }
+   ],
+   "marketing_concepts": [
+    "creator_visit_or_collab",
+    "kitchen_or_making_of",
+    "new_product_or_launch",
+    "promo_or_giveaway",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "burger_or_sandwich_format",
+    "crispy_texture_focus",
+    "homemade_or_fresh",
+    "new_opening",
+    "size_or_portion_format",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 29,
+   "id": "tiktok:7689538996455673120",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@croustyone_france/video/7689538996455673120",
+   "author_handle": "croustyone_france",
+   "author_is_restaurant": true,
+   "views": 1200000,
+   "published_at": "2026-09-25T18:18:37+00:00",
+   "restaurants": [
+    {
+     "handle": "croustyone_france",
+     "display_name": "Crousty One 🍚🍗",
+     "profile_url": "https://www.instagram.com/croustyone_france/"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch"
+   ],
+   "restaurant_concepts": [
+    "late_night",
+    "multiple_locations",
+    "new_opening",
+    "rice_bowl_format"
+   ]
+  },
+  {
+   "rank": 30,
+   "id": "tiktok:7690236989811019040",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@lestreetfoodist/video/7690236989811019040",
+   "author_handle": "lestreetfoodist",
+   "author_is_restaurant": false,
+   "views": 1200000,
+   "published_at": "2026-09-27T15:27:14+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "crispy_texture_focus"
+   ]
+  },
+  {
+   "rank": 31,
+   "id": "tiktok:7683551165895789857",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@subwayfrance/video/7683551165895789857",
+   "author_handle": "subwayfrance",
+   "author_is_restaurant": true,
+   "views": 1100000,
+   "published_at": "2026-09-09T15:02:47+00:00",
+   "restaurants": [
+    {
+     "handle": "subwayfrance",
+     "display_name": "SUBWAY France",
+     "profile_url": "https://www.instagram.com/subwayfrance/"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch"
+   ],
+   "restaurant_concepts": [
+    "burger_or_sandwich_format",
+    "crispy_texture_focus",
+    "signature_sauce"
+   ]
+  },
+  {
+   "rank": 32,
+   "id": "tiktok:7694303918913785121",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@keonii_/video/7694303918913785121",
+   "author_handle": "keonii_",
+   "author_is_restaurant": false,
+   "views": 1100000,
+   "published_at": "2026-10-08T14:28:59+00:00",
+   "restaurants": [
+    {
+     "handle": "kfc_france",
+     "display_name": "KFC France",
+     "profile_url": "https://www.instagram.com/kfc_france/"
+    }
+   ],
+   "marketing_concepts": [
+    "comparison_or_ranking",
+    "price_or_value_test",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "low_price_entry",
+    "size_or_portion_format",
+    "youth_or_student_target"
+   ]
+  },
+  {
+   "rank": 33,
+   "id": "tiktok:7693829114645515542",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@otacosbe/video/7693829114645515542",
+   "author_handle": "otacosbe",
+   "author_is_restaurant": true,
+   "views": 1100000,
+   "published_at": "2026-10-07T07:46:38+00:00",
+   "restaurants": [
+    {
+     "handle": "otacosbe",
+     "display_name": "O'tacos Belgium",
+     "profile_url": "https://www.instagram.com/otacosbe/"
+    }
+   ],
+   "marketing_concepts": [
+    "meme_or_trend_format"
+   ],
+   "restaurant_concepts": [
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 34,
+   "id": "tiktok:7683571592693042465",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@racheltrutti/video/7683571592693042465",
+   "author_handle": "racheltrutti",
+   "author_is_restaurant": false,
+   "views": 1100000,
+   "published_at": "2026-09-09T18:00:00+00:00",
+   "restaurants": [
+    {
+     "handle": "chickenstreet.fr",
+     "display_name": "Chicken Street France",
+     "profile_url": "https://www.tiktok.com/@chickenstreet.fr"
+    }
+   ],
+   "marketing_concepts": [
+    "challenge",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "delivery_focus",
+    "multiple_locations",
+    "new_opening",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 35,
+   "id": "tiktok:7681722109873114401",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@maniraj_life/video/7681722109873114401",
+   "author_handle": "maniraj_life",
+   "author_is_restaurant": false,
+   "views": 1100000,
+   "published_at": "2026-09-04T16:45:06+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "creator_visit_or_collab",
+    "place_or_ambience_tour",
+    "price_or_value_test"
+   ],
+   "restaurant_concepts": [
+    "rice_bowl_format",
+    "size_or_portion_format"
+   ]
+  },
+  {
+   "rank": 36,
+   "id": "tiktok:7697938078937206048",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@kroustysabaidi.fr/video/7697938078937206048",
+   "author_handle": "kroustysabaidi.fr",
+   "author_is_restaurant": true,
+   "views": 1000000,
+   "published_at": "2026-10-18T09:31:23+00:00",
+   "restaurants": [
+    {
+     "handle": "kroustysabaidi.fr",
+     "display_name": "Krousty Sabaidi®",
+     "profile_url": "https://www.instagram.com/kroustysabaidi.fr/"
+    }
+   ],
+   "marketing_concepts": [
+    "meme_or_trend_format"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations",
+    "new_opening",
+    "other"
+   ]
+  },
+  {
+   "rank": 37,
+   "id": "tiktok:7695813193893006624",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@m23off/video/7695813193893006624",
+   "author_handle": "m23off",
+   "author_is_restaurant": false,
+   "views": 988400,
+   "published_at": "2026-10-12T16:05:45+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "prank_or_skit"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 38,
+   "id": "instagram:DeoX7MUgaDY",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/DeoX7MUgaDY/",
+   "author_handle": "kroustysabaidi.fr",
+   "author_is_restaurant": true,
+   "views": 980663,
+   "published_at": "2026-10-18T09:35:49+00:00",
+   "restaurants": [
+    {
+     "handle": "kroustysabaidi.fr",
+     "display_name": "Krousty Sabaidi®",
+     "profile_url": "https://www.instagram.com/kroustysabaidi.fr/"
+    }
+   ],
+   "marketing_concepts": [
+    "meme_or_trend_format"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations",
+    "new_opening",
+    "other"
+   ]
+  },
+  {
+   "rank": 39,
+   "id": "tiktok:7672330607589985569",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@lina_momo_/video/7672330607589985569",
+   "author_handle": "lina_momo_",
+   "author_is_restaurant": false,
+   "views": 968300,
+   "published_at": "2026-08-10T09:21:20+00:00",
+   "restaurants": [
+    {
+     "handle": "popeyes",
+     "display_name": null,
+     "profile_url": "https://www.instagram.com/popeyes/"
+    }
+   ],
+   "marketing_concepts": [
+    "creator_visit_or_collab",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "crispy_texture_focus",
+    "halal",
+    "homemade_or_fresh",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 40,
+   "id": "tiktok:7688421090946845974",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@leon_fish_brasserie/video/7688421090946845974",
+   "author_handle": "leon_fish_brasserie",
+   "author_is_restaurant": true,
+   "views": 894700,
+   "published_at": "2026-09-22T18:00:10+00:00",
+   "restaurants": [
+    {
+     "handle": "leon_fish_brasserie",
+     "display_name": "Leon fish brasserie",
+     "profile_url": "https://www.tiktok.com/@leon_fish_brasserie"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "crispy_texture_focus",
+    "delivery_focus"
+   ]
+  },
+  {
+   "rank": 41,
+   "id": "instagram:Dc_RqpmMpxr",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/Dc_RqpmMpxr/",
+   "author_handle": "nico_la",
+   "author_is_restaurant": false,
+   "views": 884931,
+   "published_at": "2026-09-07T14:00:15+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 42,
+   "id": "tiktok:7695559357429337377",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@rose.thr/video/7695559357429337377",
+   "author_handle": "rose.thr",
+   "author_is_restaurant": false,
+   "views": 884000,
+   "published_at": "2026-10-11T23:40:59+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "late_night",
+    "multiple_locations",
+    "rice_bowl_format"
+   ]
+  },
+  {
+   "rank": 43,
+   "id": "tiktok:7682552874231958816",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@aytherseries/video/7682552874231958816",
+   "author_handle": "aytherseries",
+   "author_is_restaurant": false,
+   "views": 877500,
+   "published_at": "2026-09-06T22:28:53+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 44,
+   "id": "tiktok:7680587613509586209",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@tasawar_ato/video/7680587613509586209",
+   "author_handle": "tasawar_ato",
+   "author_is_restaurant": false,
+   "views": 867700,
+   "published_at": "2026-09-01T15:22:42+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "prank_or_skit"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 45,
+   "id": "tiktok:7682447390321757472",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@plpeyy/video/7682447390321757472",
+   "author_handle": "plpeyy",
+   "author_is_restaurant": false,
+   "views": 851700,
+   "published_at": "2026-09-06T15:39:33+00:00",
+   "restaurants": [
+    {
+     "handle": "tastycrousty",
+     "display_name": "Tasty Crousty",
+     "profile_url": "https://www.instagram.com/tastycrousty/"
+    }
+   ],
+   "marketing_concepts": [
+    "challenge"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations"
+   ]
+  },
+  {
+   "rank": 46,
+   "id": "instagram:Ddb_t19IykI",
+   "platform": "instagram",
+   "post_url": "https://www.instagram.com/p/Ddb_t19IykI/",
+   "author_handle": "henni_mohamed_off",
+   "author_is_restaurant": false,
+   "views": 844099,
+   "published_at": "2026-09-18T17:45:53+00:00",
+   "restaurants": [],
+   "marketing_concepts": [
+    "prank_or_skit",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "size_or_portion_format"
+   ]
+  },
+  {
+   "rank": 47,
+   "id": "tiktok:7680867863179037985",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@pitaya/video/7680867863179037985",
+   "author_handle": "pitaya",
+   "author_is_restaurant": true,
+   "views": 814500,
+   "published_at": "2026-09-02T09:30:12+00:00",
+   "restaurants": [
+    {
+     "handle": "pitaya",
+     "display_name": "Pitaya, Thaï Street Food 🔥🥢",
+     "profile_url": "https://www.tiktok.com/@pitaya"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch",
+    "price_or_value_test"
+   ],
+   "restaurant_concepts": [
+    "crispy_texture_focus",
+    "other"
+   ]
+  },
+  {
+   "rank": 48,
+   "id": "tiktok:7686157286821088544",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@jeremlecoach/video/7686157286821088544",
+   "author_handle": "jeremlecoach",
+   "author_is_restaurant": false,
+   "views": 805200,
+   "published_at": "2026-09-16T15:35:52+00:00",
+   "restaurants": [
+    {
+     "handle": "pepechickenbyfgc",
+     "display_name": "Pepe Chicken",
+     "profile_url": "https://www.instagram.com/pepechickenbyfgc/"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch",
+    "taste_test_review"
+   ],
+   "restaurant_concepts": [
+    "burger_or_sandwich_format",
+    "delivery_focus",
+    "tenders_format"
+   ]
+  },
+  {
+   "rank": 49,
+   "id": "tiktok:7691020025263738144",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@croustyone_france/video/7691020025263738144",
+   "author_handle": "croustyone_france",
+   "author_is_restaurant": true,
+   "views": 802800,
+   "published_at": "2026-09-29T18:05:47+00:00",
+   "restaurants": [
+    {
+     "handle": "croustyone_france",
+     "display_name": "Crousty One 🍚🍗",
+     "profile_url": "https://www.instagram.com/croustyone_france/"
+    }
+   ],
+   "marketing_concepts": [
+    "new_product_or_launch",
+    "promo_or_giveaway"
+   ],
+   "restaurant_concepts": [
+    "multiple_locations",
+    "new_opening"
+   ]
+  },
+  {
+   "rank": 50,
+   "id": "tiktok:7692058100274138398",
+   "platform": "tiktok",
+   "post_url": "https://www.tiktok.com/@wingstop.fr/video/7692058100274138398",
+   "author_handle": "wingstop.fr",
+   "author_is_restaurant": true,
+   "views": 796900,
+   "published_at": "2026-10-02T13:14:44+00:00",
+   "restaurants": [
+    {
+     "handle": "wingstop.fr",
+     "display_name": "Wingstop France",
+     "profile_url": "https://www.tiktok.com/@wingstop.fr"
+    }
+   ],
+   "marketing_concepts": [
+    "meme_or_trend_format"
+   ],
+   "restaurant_concepts": [
+    "delivery_focus",
+    "multiple_locations",
+    "tenders_format"
+   ]
+  }
+ ],
+ "patterns": [
+  {
+   "title": "Les tests dégustation donnent aux créateurs un rôle de preuve",
+   "type": "marketing",
+   "post_urls": [
+    "https://www.tiktok.com/@dymanpasplus/video/7686897090382875937",
+    "https://www.tiktok.com/@johnatable/video/7686897374882467104"
+   ]
+  },
+  {
+   "title": "Une nouveauté claire peut être portée à la fois par la marque et par des créateurs",
+   "type": "combination",
+   "post_urls": [
+    "https://www.instagram.com/p/DcdAFMiOWlz/",
+    "https://www.tiktok.com/@dymanpasplus/video/7686897090382875937",
+    "https://www.tiktok.com/@sofiaa_smh/video/7690998058221440288"
+   ]
+  },
+  {
+   "title": "Prix et quantité visibles rendent la proposition de valeur concrète",
+   "type": "marketing",
+   "post_urls": [
+    "https://www.tiktok.com/@johnatable/video/7686897374882467104",
+    "https://www.tiktok.com/@keonii_/video/7694303918913785121",
+    "https://www.tiktok.com/@mrzbil/video/7689519655165398305",
+    "https://www.tiktok.com/@otacosreunion/video/7688236450743061793"
+   ]
+  },
+  {
+   "title": "Les tenders sont un format produit récurrent dans plusieurs enseignes",
+   "type": "restaurant_concept",
+   "post_urls": [
+    "https://www.tiktok.com/@johnatable/video/7676120894217014560",
+    "https://www.tiktok.com/@johnatable/video/7686897374882467104",
+    "https://www.tiktok.com/@onmangequoi.fr/video/7686568757761789217"
+   ]
+  },
+  {
+   "title": "Les formats humoristiques sont davantage publiés par les comptes restaurant que par les créateurs dans cet échantillon",
+   "type": "marketing",
+   "post_urls": [
+    "https://www.instagram.com/p/DeRIxy_j8_T/",
+    "https://www.tiktok.com/@.madame..a/video/7685063402418425120",
+    "https://www.tiktok.com/@larzizealanaa/video/7694365400116596001"
+   ]
+  }
+ ]
+}
