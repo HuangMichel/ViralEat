@@ -1,0 +1,181 @@
+{
+  "title": "Tasty Crousty: brand-account benchmark and French sector monitoring",
+  "selection_basis": {
+    "source": "real Oriane profile discovery",
+    "discovery_analysis_ids": [
+      "be5eb0a4-b668-4bf2-835a-21cf9c539f56",
+      "9a27ea49-074e-4ec1-a36b-99e10286abc0"
+    ],
+    "profiles": [
+      {
+        "id": "prf_aaa63c0dfa55adf5e889cab43584",
+        "platform": "instagram",
+        "handle": "tastycrousty",
+        "displayName": "Tasty Crousty",
+        "bio": "🥇L'original Tasty Crousty\n📍 24 restaurants : IDF, Marseille, Lyon, Avignon et Grenoble..\n🤌 Tasty Crousty : testé une fois, validé à vie",
+        "followersCount": 112324,
+        "locationCompleteAddress": null
+      },
+      {
+        "id": "prf_cbaa2d93a7189eb9fc49a40125ad",
+        "platform": "instagram",
+        "handle": "kroustysabaidi.fr",
+        "displayName": "Krousty Sabaidi®",
+        "bio": "®️Since2012\n📍45 Restos : Voir story à la une\n🔜40 ouvertures en cours\n🌟Krousty : un plat créé dans nos cuisines\n🔥Enflammez vous aussi pour nos Woks",
+        "followersCount": 92243,
+        "locationCompleteAddress": null
+      },
+      {
+        "id": "prf_eae20b66021b79470a860f052db7",
+        "platform": "instagram",
+        "handle": "croustyone_france",
+        "displayName": "Crousty One 🍚🍗",
+        "bio": "40 restaurants ✨\n🔜 Amiens\n🧡 The Only One 💜",
+        "followersCount": 41742,
+        "locationCompleteAddress": "22 rue Sainte-Anne, Mantes-la-Jolie"
+      },
+      {
+        "id": "prf_5d1d2ef8808a5b3cdccd270f2d80",
+        "platform": "instagram",
+        "handle": "croustygame",
+        "displayName": "Crousty Game 🍚🍗",
+        "bio": "Les Crousty les plus originaux  \n+70 restaurants 📍🇫🇷 🇧🇪 🇷🇪 \nTélécharge l’application Crousty Game👇",
+        "followersCount": 36098,
+        "locationCompleteAddress": null
+      },
+      {
+        "id": "prf_8daaef3804bcda4c0e06fb934049",
+        "platform": "instagram",
+        "handle": "kroustyfactory.officiel",
+        "displayName": "KROUSTY FACTORY FRANCE",
+        "bio": "⚠️ Risque d’addiction au Krousty \n🍗 Krousty généreux & nouveautés\n🔥 Basique • Dynamite • Curry • Boursin • Sauce Verte\n📍 +25 adresses en France 🇫🇷",
+        "followersCount": 6683,
+        "locationCompleteAddress": null
+      }
+    ],
+    "scope_approval": "User approved brand-account comparison instead of a Paris-branch benchmark",
+    "peer_relevance": "Restaurant brands associated with crousty/krousty; menu equivalence is a hypothesis, not proven",
+    "local_branch_verified": false
+  },
+  "benchmark": {
+    "own_restaurant": {
+      "name": "Tasty Crousty",
+      "accounts": [
+        {
+          "platform": "instagram",
+          "handle": "tastycrousty",
+          "confirmed": true
+        }
+      ]
+    },
+    "competitors": [
+      {
+        "name": "Krousty Sabaidi®",
+        "accounts": [
+          {
+            "platform": "instagram",
+            "handle": "kroustysabaidi.fr",
+            "confirmed": true
+          }
+        ]
+      },
+      {
+        "name": "Crousty One 🍚🍗",
+        "accounts": [
+          {
+            "platform": "instagram",
+            "handle": "croustyone_france",
+            "confirmed": true
+          }
+        ]
+      },
+      {
+        "name": "Crousty Game 🍚🍗",
+        "accounts": [
+          {
+            "platform": "instagram",
+            "handle": "croustygame",
+            "confirmed": true
+          }
+        ]
+      },
+      {
+        "name": "KROUSTY FACTORY FRANCE",
+        "accounts": [
+          {
+            "platform": "instagram",
+            "handle": "kroustyfactory.officiel",
+            "confirmed": true
+          }
+        ]
+      }
+    ],
+    "benchmark_scope": "brand_accounts",
+    "analyze_all_collected": true,
+    "area": {
+      "city": "Paris",
+      "min_latitude": 48.8,
+      "max_latitude": 48.9,
+      "min_longitude": 2.2,
+      "max_longitude": 2.5
+    },
+    "window": {
+      "start_at": "2026-10-01T00:00:00Z",
+      "end_at": "2026-10-30T00:00:00Z"
+    },
+    "category_terms": [
+      "crousty",
+      "krousty"
+    ],
+    "goals": [
+      "Compare observed social-account performance and identify evidence-backed content experiments"
+    ],
+    "constraints": [
+      "Example is a brand-account study, not a local Paris restaurant measurement",
+      "Production capacity, margins and customer demographics are unknown"
+    ],
+    "timezone": "Europe/Paris",
+    "contents_per_account": 100,
+    "include_llm": true
+  },
+  "market": {
+    "analyze_all_collected": true,
+    "category_terms": [
+      "crousty",
+      "krousty"
+    ],
+    "topics": [
+      "nouveau",
+      "menu",
+      "sauce",
+      "poulet",
+      "riz"
+    ],
+    "country_code": "FR",
+    "area": {
+      "city": null,
+      "min_latitude": 41.3,
+      "max_latitude": 51.2,
+      "min_longitude": -5.3,
+      "max_longitude": 9.7
+    },
+    "language": "fr",
+    "platforms": [
+      "instagram",
+      "tiktok"
+    ],
+    "current": {
+      "start_at": "2026-10-16T00:00:00Z",
+      "end_at": "2026-10-30T00:00:00Z"
+    },
+    "previous": {
+      "start_at": "2026-09-18T00:00:00Z",
+      "end_at": "2026-10-16T00:00:00Z"
+    },
+    "contents_per_window": 100,
+    "min_sources": 3,
+    "min_creators": 2,
+    "viral_views_per_follower": 10.0,
+    "include_llm": true
+  }
+}

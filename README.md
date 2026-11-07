@@ -4,7 +4,19 @@ ViralEat helps restaurant owners examine social content about their restaurant, 
 
 ## Project status
 
-This repository contains MVP specifications and a configuration template. The applications, migrations, configuration loader, startup scripts, and deployments have not been implemented. API routes describe target contracts rather than running endpoints.
+The local analysis backend in [apps/api](apps/api) implements Oriane collection, deterministic account/sector metrics, structured OpenAI agents, durable local jobs, and JSON exports. The real [Tasty Crousty study](examples/tasty-crousty/README.md) includes both workflows and their retained provider responses. Its results are partial, not a complete market survey or a Paris-branch benchmark.
+
+The full frontend, Supabase migrations and authentication, and Vercel deployment remain unimplemented. The routes in [API.md](API.md) are hosted target contracts; the local backend uses `/local/v1` instead.
+
+Local installation and tests:
+
+```powershell
+python -m venv apps/api/.venv
+apps/api/.venv/Scripts/python.exe -m pip install -e apps/api
+apps/api/.venv/Scripts/python.exe -m unittest discover -s apps/api -p "test_*.py" -v
+```
+
+Private credentials belong in the ignored root `.env`, never in example JSON or Git. Oriane Bearer authentication and access to the configured OpenAI model were verified on the study account. This does not establish provider coverage or deployment readiness.
 
 ## Documentation
 

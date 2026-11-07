@@ -1,0 +1,32 @@
+{
+  "schema_version": "analysis-export.v1",
+  "analysis_id": "3b485f74-a7dd-41b1-a728-1cf2d93b2ec6",
+  "kind": "market",
+  "status": "partial",
+  "phase": "finished",
+  "model": "gpt-6-astra",
+  "exported_at": "2026-11-07T14:40:28.815292+00:00",
+  "created_at": "2026-11-07T14:39:03.564056+00:00",
+  "usage": {
+    "oriane_requests": 4,
+    "actual_llm_tokens": 13089,
+    "reserved_llm_tokens_upper_bound": 45972,
+    "oriane_credits": null
+  },
+  "error": null,
+  "data_basis": "provider_responses_recorded_for_this_analysis",
+  "market_coverage_complete": false,
+  "limitations": [
+    "Complete export means all retained analysis artifacts, not complete platform coverage.",
+    "No private provider credentials or authentication headers are exported.",
+    "Retained exports must follow provider withdrawal and retention terms."
+  ],
+  "files": [
+    "request.json",
+    "report.json",
+    "sources.json",
+    "oriane_responses.json",
+    "openai_responses.json",
+    "manifest.json"
+  ]
+}

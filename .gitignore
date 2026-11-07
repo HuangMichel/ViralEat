@@ -39,6 +39,7 @@ test-results/
 
 # Deployment state
 .vercel/
+.local/
 
 # Logs and operating system files
 *.log
