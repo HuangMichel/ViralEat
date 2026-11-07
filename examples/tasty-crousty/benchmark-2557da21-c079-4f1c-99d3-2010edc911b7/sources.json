@@ -1,0 +1,527 @@
+[
+  {
+    "source_id": "instagram:DfCR-lNsOpM",
+    "provider_id": "cnt_75cdae823c605d9812fde1250c2c",
+    "platform": "instagram",
+    "platform_id": "DfCR-lNsOpM",
+    "handle": "tastycrousty",
+    "profile_id": "prf_aaa63c0dfa55adf5e889cab43584",
+    "format": "video",
+    "published_at": "2026-10-28T11:04:49+00:00",
+    "fetched_at": "2026-11-07T14:38:10.851451+00:00",
+    "views": 240840.0,
+    "interactions": 8516.0,
+    "followers": 112324.0,
+    "engagement_views_percent": 3.535957482145823,
+    "engagement_followers_percent": 7.5816388305259785,
+    "texts": {
+      "caption": "Le Tasty Crousty de Tarbes est gratuit jusqu’à 13h ! \n\n📍8 Place De Verdun, 65000 Tarbes \n\n#tastycrousty #food #fastfood #tarbes",
+      "comment.0": "Ouvrer un Tasty crousty à Antony svp😢!",
+      "comment.1": "Ouvert à volvic svp 🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏😢😢😢😢😢😢",
+      "comment.2": "Les sans dents",
+      "comment.3": "Ouvrez à Brest please",
+      "comment.4": "Les gars vs mettez quoi dans le tasty crousty je suis addict svp",
+      "comment.5": "Ouvre a Montpellier stp !!!!!!",
+      "comment.6": "Venez à épinay-sur-seine s'il vous plaît 🙏🙏🙏",
+      "comment.7": "We tyreses",
+      "comment.8": "Ksoooooooos",
+      "comment.9": "J’imagine le mec qui va arriver a 13h01 😂😂😂",
+      "comment.11": "Vous pouvez ouvrir au Guinée Conakry"
+    },
+    "hashtags": [
+      "#tastycrousty",
+      "#food",
+      "#fastfood",
+      "#tarbes"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "video",
+        "duration": 30.965,
+        "tags": [
+          {
+            "id": "prf_6fa2c605f9f7395f98443e9430ed",
+            "platformId": "1684418163",
+            "profileHandle": "tasawar_ato",
+            "positionX": 0,
+            "positionY": 0
+          },
+          {
+            "id": "prf_eff33cd414d8bb8e38ae4553eb1f",
+            "platformId": "11109544236",
+            "profileHandle": "lokman.mh",
+            "positionX": 0,
+            "positionY": 0
+          }
+        ],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": "39609523108663090",
+    "audio_title": "Original audio",
+    "external_url": "https://www.instagram.com/p/DfCR-lNsOpM/",
+    "likes": 8457.0,
+    "shares": 0.0,
+    "comments": 59.0,
+    "audio_author": "tastycrousty",
+    "audio_type": "original",
+    "audio_copyrighted": false
+  },
+  {
+    "source_id": "instagram:DfE4T6ZAGBS",
+    "provider_id": "cnt_eaee7029ba58449e44709a8957da",
+    "platform": "instagram",
+    "platform_id": "DfE4T6ZAGBS",
+    "handle": "kroustysabaidi.fr",
+    "profile_id": "prf_cbaa2d93a7189eb9fc49a40125ad",
+    "format": "video",
+    "published_at": "2026-10-29T11:17:46+00:00",
+    "fetched_at": "2026-11-07T14:38:11.102566+00:00",
+    "views": 39074.0,
+    "interactions": 1235.0,
+    "followers": 92243.0,
+    "engagement_views_percent": 3.160669498899524,
+    "engagement_followers_percent": 1.3388549808657568,
+    "texts": {
+      "caption": "300 KROUSTYS OFFERTS 🎁 ce samedi 31 octobre à Créteil📍pour l’inauguration de votre restaurant Krousty Sabaïdi ✨\n\nC’est bon pour toi @gradi_sp ? (Et @cameliaa.sadouki  sera bien présente 😉)\n\nRDV Samedi 31 octobre à partir de 13H\n📍 30 avenue du Maréchal Lyautey, 94000 Créteil \n\n#kroustysabaïdi #krousty #créteil #creteil #camelia92"
+    },
+    "hashtags": [
+      "#kroustysabaïdi",
+      "#krousty",
+      "#créteil",
+      "#creteil",
+      "#camelia92"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "video",
+        "duration": 39.099,
+        "tags": [
+          {
+            "id": "prf_961df0a531968984660539a87cf1",
+            "platformId": "15766041375",
+            "profileHandle": "gradi_sp",
+            "positionX": 0,
+            "positionY": 0
+          },
+          {
+            "id": "prf_7a687205f7fd8607f6f0c0aa2d93",
+            "platformId": "65183239451",
+            "profileHandle": "cameliaa.sadouki",
+            "positionX": 0,
+            "positionY": 0
+          }
+        ],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": "28708111748860506",
+    "audio_title": "Original audio",
+    "external_url": "https://www.instagram.com/p/DfE4T6ZAGBS/",
+    "likes": 1234.0,
+    "shares": 0.0,
+    "comments": 1.0,
+    "audio_author": "kroustysabaidi.fr",
+    "audio_type": "original",
+    "audio_copyrighted": false
+  },
+  {
+    "source_id": "instagram:DfC-gsGgCnz",
+    "provider_id": "cnt_f06069d140665c019b5cb35acff3",
+    "platform": "instagram",
+    "platform_id": "DfC-gsGgCnz",
+    "handle": "kroustysabaidi.fr",
+    "profile_id": "prf_cbaa2d93a7189eb9fc49a40125ad",
+    "format": "video",
+    "published_at": "2026-10-28T17:34:20+00:00",
+    "fetched_at": "2026-11-07T14:38:11.102566+00:00",
+    "views": 42458.0,
+    "interactions": 2715.0,
+    "followers": 92243.0,
+    "engagement_views_percent": 6.394554618681991,
+    "engagement_followers_percent": 2.9433127717008336,
+    "texts": {
+      "caption": "@lasz.foot est venu en découdre au Krousty Sabaïdi ! 😅\n\n#ballondor #mbappé #lamineyamal #krousty #kroustysabaïdi",
+      "comment.0": "Lamine yamal mérite le ballon d’or",
+      "comment.1": "Last.foot c le GOAT et il a raison",
+      "comment.2": "😂😂",
+      "comment.3": "😂😂😂😂😂😂",
+      "comment.5": "😂😂😂😂😂",
+      "comment.6": "😂😂😂😂",
+      "comment.7": "😂😂😂😂",
+      "comment.8": "Kylian dictador 😂",
+      "comment.9": "😂😂😂😂😂😂😂😂😂😂😂",
+      "comment.10": "😂😂😂",
+      "comment.11": "Lui alors il a plus honte alors que yamal l a ps,eu et il flocque yamal ballon d or c un baisés du cerveau lui"
+    },
+    "hashtags": [
+      "#ballondor",
+      "#mbappé",
+      "#lamineyamal",
+      "#krousty",
+      "#kroustysabaïdi"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "video",
+        "duration": 63.132,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": "28504371805931408",
+    "audio_title": "Original audio",
+    "external_url": "https://www.instagram.com/p/DfC-gsGgCnz/",
+    "likes": 2687.0,
+    "shares": 0.0,
+    "comments": 28.0,
+    "audio_author": "kroustysabaidi.fr",
+    "audio_type": "original",
+    "audio_copyrighted": false
+  },
+  {
+    "source_id": "instagram:De2HNHWKo_r",
+    "provider_id": "cnt_9418fbfa48a24ccb15a8399436e8",
+    "platform": "instagram",
+    "platform_id": "De2HNHWKo_r",
+    "handle": "croustyone_france",
+    "profile_id": "prf_eae20b66021b79470a860f052db7",
+    "format": "video",
+    "published_at": "2026-10-23T17:42:02+00:00",
+    "fetched_at": "2026-11-07T14:38:11.480890+00:00",
+    "views": 1424.0,
+    "interactions": 36.0,
+    "followers": 41742.0,
+    "engagement_views_percent": 2.5280898876404496,
+    "engagement_followers_percent": 0.086244070720138,
+    "texts": {
+      "caption": "Croustyone débarque à Roubaix et à l’occasion Grosse inauguration samedi 24 Octobre 13h 📍🔥\nOn vous a régalé 🫡 Plusieurs lots à gagner :\n🎮PS5\n2 X FC27\n2 X GTA6\n🍚 100 Riz Crousty\n👾 une trottinette électrique\n📱Toute la carte à 5€\n\nOn t’attends avec impatience à notre adresse : 127 Avenue Jean Lebas Roubaix\n\n#croustyone #crousty #riz #pourtoi #inaugration"
+    },
+    "hashtags": [
+      "#croustyone",
+      "#crousty",
+      "#riz",
+      "#pourtoi",
+      "#inaugration"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "video",
+        "duration": 34.566,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": "18640241413042404",
+    "audio_title": "Original audio",
+    "external_url": "https://www.instagram.com/p/De2HNHWKo_r/",
+    "likes": 34.0,
+    "shares": 2.0,
+    "comments": 0.0,
+    "audio_author": "croustyone_france",
+    "audio_type": "original",
+    "audio_copyrighted": false
+  },
+  {
+    "source_id": "instagram:De-l3pPTuPI",
+    "provider_id": "cnt_e8650a5f6a76e5796e39f0e7e27b",
+    "platform": "instagram",
+    "platform_id": "De-l3pPTuPI",
+    "handle": "croustygame",
+    "profile_id": "prf_5d1d2ef8808a5b3cdccd270f2d80",
+    "format": "image",
+    "published_at": "2026-10-27T00:40:32+00:00",
+    "fetched_at": "2026-11-07T14:38:12.090381+00:00",
+    "views": null,
+    "interactions": 43.0,
+    "followers": 36098.0,
+    "engagement_views_percent": null,
+    "engagement_followers_percent": 0.11912017286276248,
+    "texts": {
+      "caption": "Félicitations pour ton Crousty d’or"
+    },
+    "hashtags": [],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": null,
+    "audio_title": null,
+    "external_url": "https://www.instagram.com/p/De-l3pPTuPI/",
+    "likes": 43.0,
+    "shares": 0.0,
+    "comments": 0.0,
+    "audio_author": null,
+    "audio_type": null,
+    "audio_copyrighted": null
+  },
+  {
+    "source_id": "instagram:DeKD8atIAD3",
+    "provider_id": "cnt_a9df2297be2b7a48a9afd6e07f8d",
+    "platform": "instagram",
+    "platform_id": "DeKD8atIAD3",
+    "handle": "croustygame",
+    "profile_id": "prf_5d1d2ef8808a5b3cdccd270f2d80",
+    "format": "image",
+    "published_at": "2026-10-06T15:04:06+00:00",
+    "fetched_at": "2026-11-07T14:38:12.090381+00:00",
+    "views": null,
+    "interactions": 93.0,
+    "followers": 36098.0,
+    "engagement_views_percent": null,
+    "engagement_followers_percent": 0.2576320017729514,
+    "texts": {
+      "caption": "𝗨𝗡 𝗜𝗡𝗗𝗜𝗖𝗘 𝗧𝗢𝗠𝗕𝗘 𝗟𝗘 𝟬𝟳 𝗢𝗖𝗧𝗢𝗕𝗥𝗘 👀\n\nvous avez demandé, on a entendu.\nrdv mercredi pour le premier indice.\nactive les notifs pour ne pas le rater 🔔\n\n#crousty #croustygame #drop #dropenapproche #indice \n\n————————————————————\n💥 Les Crousty les plus originaux\n👾 Un univers unique & immersif\n📍+ 60 restaurants en France\n📲 Disponible en livraison\n————————————————————"
+    },
+    "hashtags": [
+      "#crousty",
+      "#croustygame",
+      "#drop",
+      "#dropenapproche",
+      "#indice"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": null,
+    "audio_title": null,
+    "external_url": "https://www.instagram.com/p/DeKD8atIAD3/",
+    "likes": 87.0,
+    "shares": 4.0,
+    "comments": 2.0,
+    "audio_author": null,
+    "audio_type": null,
+    "audio_copyrighted": null
+  },
+  {
+    "source_id": "instagram:DeCXYZFIbob",
+    "provider_id": "cnt_46536ada0c1b72be69ba224ac78b",
+    "platform": "instagram",
+    "platform_id": "DeCXYZFIbob",
+    "handle": "croustygame",
+    "profile_id": "prf_5d1d2ef8808a5b3cdccd270f2d80",
+    "format": "image",
+    "published_at": "2026-10-03T15:21:11+00:00",
+    "fetched_at": "2026-11-07T14:38:12.090381+00:00",
+    "views": null,
+    "interactions": 97.0,
+    "followers": 36098.0,
+    "engagement_views_percent": null,
+    "engagement_followers_percent": 0.2687129480857665,
+    "texts": {
+      "caption": "n°001 débloqué : le Crousty Original, le titulaire indiscutable 🃏\n croustillant : 95 %. portion : 90 %. rareté : commun, normal, tout le monde en prend.\n et toi, tu lui mets combien ? note en commentaire 👇\n rdv dans ton Crousty le plus proche pour le tester 📍\n#crousty #croustygame #croustyoriginal #cartejoueur #streetfood \n————————————————————\n 💥 Les Crousty les plus originaux\n 👾 Un univers unique & immersif\n 📍+ 60 restaurants en France\n 📲 Disponible en livraison\n ————————————————————"
+    },
+    "hashtags": [
+      "#crousty",
+      "#croustygame",
+      "#croustyoriginal",
+      "#cartejoueur",
+      "#streetfood"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": null,
+    "audio_title": null,
+    "external_url": "https://www.instagram.com/p/DeCXYZFIbob/",
+    "likes": 86.0,
+    "shares": 9.0,
+    "comments": 2.0,
+    "audio_author": null,
+    "audio_type": null,
+    "audio_copyrighted": null
+  },
+  {
+    "source_id": "instagram:Deq3M6hOhwL",
+    "provider_id": "cnt_77ab18c74a433683c87e2e75bda3",
+    "platform": "instagram",
+    "platform_id": "Deq3M6hOhwL",
+    "handle": "kroustyfactory.officiel",
+    "profile_id": "prf_8daaef3804bcda4c0e06fb934049",
+    "format": "image",
+    "published_at": "2026-10-19T08:47:05+00:00",
+    "fetched_at": "2026-11-07T14:38:12.366925+00:00",
+    "views": null,
+    "interactions": 17.0,
+    "followers": 6683.0,
+    "engagement_views_percent": null,
+    "engagement_followers_percent": 0.2543767768966033,
+    "texts": {
+      "caption": "🚨🔥 ROUEN, ÇA VA ÊTRE DU LOURD ! 🔥🚨\n\nKROUSTY FACTORY vous prépare une inauguration de FOLIE ! 🤯💜\n\n🎁 DES LOTS INCROYABLES À GAGNER :\n🛴 Une trottinette électrique\n🇫🇷 3 maillots de l’équipe de France\n🎮 GTA VI\n🍗 100 KROUSTYS OFFERTS !\n\n📅 Mercredi 21 octobre dès 14h\n📍 104 rue Saint-Sever, 76100 Rouen\n\nOn compte sur vous pour mettre le FEU à cette inauguration ! 🔥\n\nIDENTIFIE TES POTES, VOUS NE POUVEZ PAS RATER ÇA ! 👀💜\n\n#KroustyFactory #Rouen #Inauguration #KroustyFactoryFrance #JeuConcours"
+    },
+    "hashtags": [
+      "#kroustyfactory",
+      "#rouen",
+      "#inauguration",
+      "#kroustyfactoryfrance",
+      "#jeuconcours"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": null,
+    "audio_title": null,
+    "external_url": "https://www.instagram.com/p/Deq3M6hOhwL/",
+    "likes": 17.0,
+    "shares": 0.0,
+    "comments": 0.0,
+    "audio_author": null,
+    "audio_type": null,
+    "audio_copyrighted": null
+  },
+  {
+    "source_id": "instagram:Dee7NZ0uykh",
+    "provider_id": "cnt_e4253afe4e909cd493f14f75284a",
+    "platform": "instagram",
+    "platform_id": "Dee7NZ0uykh",
+    "handle": "kroustyfactory.officiel",
+    "profile_id": "prf_8daaef3804bcda4c0e06fb934049",
+    "format": "video",
+    "published_at": "2026-10-14T17:34:57+00:00",
+    "fetched_at": "2026-11-07T14:38:12.366925+00:00",
+    "views": 1852.0,
+    "interactions": 55.0,
+    "followers": 6683.0,
+    "engagement_views_percent": 2.9697624190064795,
+    "engagement_followers_percent": 0.822983689959599,
+    "texts": {
+      "caption": "🚨🔥 KROUSTY FACTORY DÉBARQUE PARTOUT EN FRANCE ! 🇫🇷\n\nDe nouvelles inaugurations arrivent TRÈS TRÈS VITE ! 👀🎉 \n\nEt vous connaissez la maison, chez nous, les inaugurations, ça se passe comme ÇA ! 🔥🔥\n\nOn espère vous voir encore plus nombreux pour les prochaines ! ❤️\n\n📍 Alors, quelle sera la prochaine ville selon vous ? 👀\n\n#KroustyFactory #Inauguration #Krousty #FoodTikTok #France"
+    },
+    "hashtags": [
+      "#kroustyfactory",
+      "#inauguration",
+      "#krousty",
+      "#foodtiktok",
+      "#france"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "video",
+        "duration": 27.84,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": "29062572373355189",
+    "audio_title": "Original audio",
+    "external_url": "https://www.instagram.com/p/Dee7NZ0uykh/",
+    "likes": 47.0,
+    "shares": 0.0,
+    "comments": 8.0,
+    "audio_author": "kroustyfactory.officiel",
+    "audio_type": "original",
+    "audio_copyrighted": false
+  },
+  {
+    "source_id": "instagram:DeMwERuIN4J",
+    "provider_id": "cnt_785f04a47ef99aa2b912d3e99260",
+    "platform": "instagram",
+    "platform_id": "DeMwERuIN4J",
+    "handle": "kroustyfactory.officiel",
+    "profile_id": "prf_8daaef3804bcda4c0e06fb934049",
+    "format": "image",
+    "published_at": "2026-10-07T16:08:16+00:00",
+    "fetched_at": "2026-11-07T14:38:12.366925+00:00",
+    "views": null,
+    "interactions": 36.0,
+    "followers": 6683.0,
+    "engagement_views_percent": null,
+    "engagement_followers_percent": 0.5386802334281011,
+    "texts": {
+      "caption": "Vous l’avez demandé, vous l’avez eu… Krousty Factory est enfin à Rouen ! 💜🔥\n\nEt pour l’ouverture, on vous régale : le Krousty L à seulement 5€ ! 🤯\n\n📍 104 rue Saint-Sever, 76100 Rouen\n📅 Samedi 10 octobre\n⏰ De 12h à 18h\n\nOn vous attend nombreux ! 👀🔥\n\n#KroustyFactory #Rouen #Ouverture #FoodRouen #Krousty"
+    },
+    "hashtags": [
+      "#kroustyfactory",
+      "#rouen",
+      "#ouverture",
+      "#foodrouen",
+      "#krousty"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": null,
+    "audio_title": null,
+    "external_url": "https://www.instagram.com/p/DeMwERuIN4J/",
+    "likes": 36.0,
+    "shares": 0.0,
+    "comments": 0.0,
+    "audio_author": null,
+    "audio_type": null,
+    "audio_copyrighted": null
+  }
+]

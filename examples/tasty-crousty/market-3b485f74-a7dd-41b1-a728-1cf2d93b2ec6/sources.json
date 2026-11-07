@@ -1,0 +1,282 @@
+[
+  {
+    "source_id": "instagram:DfE4T6ZAGBS",
+    "provider_id": "cnt_eaee7029ba58449e44709a8957da",
+    "platform": "instagram",
+    "platform_id": "DfE4T6ZAGBS",
+    "handle": "kroustysabaidi.fr",
+    "profile_id": "prf_cbaa2d93a7189eb9fc49a40125ad",
+    "format": "video",
+    "published_at": "2026-10-29T11:17:46+00:00",
+    "fetched_at": "2026-11-07T14:39:04.223470+00:00",
+    "views": 39074.0,
+    "interactions": 1235.0,
+    "followers": 92243.0,
+    "engagement_views_percent": 3.160669498899524,
+    "engagement_followers_percent": 1.3388549808657568,
+    "texts": {
+      "caption": "300 KROUSTYS OFFERTS 🎁 ce samedi 31 octobre à Créteil📍pour l’inauguration de votre restaurant Krousty Sabaïdi ✨\n\nC’est bon pour toi @gradi_sp ? (Et @cameliaa.sadouki  sera bien présente 😉)\n\nRDV Samedi 31 octobre à partir de 13H\n📍 30 avenue du Maréchal Lyautey, 94000 Créteil \n\n#kroustysabaïdi #krousty #créteil #creteil #camelia92"
+    },
+    "hashtags": [
+      "#kroustysabaïdi",
+      "#krousty",
+      "#créteil",
+      "#creteil",
+      "#camelia92"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "video",
+        "duration": 39.099,
+        "tags": [
+          {
+            "id": "prf_961df0a531968984660539a87cf1",
+            "platformId": "15766041375",
+            "profileHandle": "gradi_sp",
+            "positionX": 0,
+            "positionY": 0
+          },
+          {
+            "id": "prf_7a687205f7fd8607f6f0c0aa2d93",
+            "platformId": "65183239451",
+            "profileHandle": "cameliaa.sadouki",
+            "positionX": 0,
+            "positionY": 0
+          }
+        ],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": "28708111748860506",
+    "audio_title": "Original audio",
+    "external_url": "https://www.instagram.com/p/DfE4T6ZAGBS/",
+    "likes": 1234.0,
+    "shares": 0.0,
+    "comments": 1.0,
+    "audio_author": "kroustysabaidi.fr",
+    "audio_type": "original",
+    "audio_copyrighted": false
+  },
+  {
+    "source_id": "instagram:DfCR-lNsOpM",
+    "provider_id": "cnt_75cdae823c605d9812fde1250c2c",
+    "platform": "instagram",
+    "platform_id": "DfCR-lNsOpM",
+    "handle": "tastycrousty",
+    "profile_id": "prf_aaa63c0dfa55adf5e889cab43584",
+    "format": "video",
+    "published_at": "2026-10-28T11:04:49+00:00",
+    "fetched_at": "2026-11-07T14:39:04.223470+00:00",
+    "views": 240840.0,
+    "interactions": 8516.0,
+    "followers": 112324.0,
+    "engagement_views_percent": 3.535957482145823,
+    "engagement_followers_percent": 7.5816388305259785,
+    "texts": {
+      "caption": "Le Tasty Crousty de Tarbes est gratuit jusqu’à 13h ! \n\n📍8 Place De Verdun, 65000 Tarbes \n\n#tastycrousty #food #fastfood #tarbes",
+      "comment.0": "Ouvrer un Tasty crousty à Antony svp😢!",
+      "comment.1": "Ouvert à volvic svp 🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏😢😢😢😢😢😢",
+      "comment.2": "Les sans dents",
+      "comment.3": "Ouvrez à Brest please",
+      "comment.4": "Les gars vs mettez quoi dans le tasty crousty je suis addict svp",
+      "comment.5": "Ouvre a Montpellier stp !!!!!!",
+      "comment.6": "Venez à épinay-sur-seine s'il vous plaît 🙏🙏🙏",
+      "comment.7": "We tyreses",
+      "comment.8": "Ksoooooooos",
+      "comment.9": "J’imagine le mec qui va arriver a 13h01 😂😂😂",
+      "comment.11": "Vous pouvez ouvrir au Guinée Conakry"
+    },
+    "hashtags": [
+      "#tastycrousty",
+      "#food",
+      "#fastfood",
+      "#tarbes"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "video",
+        "duration": 30.965,
+        "tags": [
+          {
+            "id": "prf_6fa2c605f9f7395f98443e9430ed",
+            "platformId": "1684418163",
+            "profileHandle": "tasawar_ato",
+            "positionX": 0,
+            "positionY": 0
+          },
+          {
+            "id": "prf_eff33cd414d8bb8e38ae4553eb1f",
+            "platformId": "11109544236",
+            "profileHandle": "lokman.mh",
+            "positionX": 0,
+            "positionY": 0
+          }
+        ],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": "39609523108663090",
+    "audio_title": "Original audio",
+    "external_url": "https://www.instagram.com/p/DfCR-lNsOpM/",
+    "likes": 8457.0,
+    "shares": 0.0,
+    "comments": 59.0,
+    "audio_author": "tastycrousty",
+    "audio_type": "original",
+    "audio_copyrighted": false
+  },
+  {
+    "source_id": "instagram:De2HNHWKo_r",
+    "provider_id": "cnt_9418fbfa48a24ccb15a8399436e8",
+    "platform": "instagram",
+    "platform_id": "De2HNHWKo_r",
+    "handle": "croustyone_france",
+    "profile_id": "prf_eae20b66021b79470a860f052db7",
+    "format": "video",
+    "published_at": "2026-10-23T17:42:02+00:00",
+    "fetched_at": "2026-11-07T14:39:04.223470+00:00",
+    "views": 1424.0,
+    "interactions": 36.0,
+    "followers": 41742.0,
+    "engagement_views_percent": 2.5280898876404496,
+    "engagement_followers_percent": 0.086244070720138,
+    "texts": {
+      "caption": "Croustyone débarque à Roubaix et à l’occasion Grosse inauguration samedi 24 Octobre 13h 📍🔥\nOn vous a régalé 🫡 Plusieurs lots à gagner :\n🎮PS5\n2 X FC27\n2 X GTA6\n🍚 100 Riz Crousty\n👾 une trottinette électrique\n📱Toute la carte à 5€\n\nOn t’attends avec impatience à notre adresse : 127 Avenue Jean Lebas Roubaix\n\n#croustyone #crousty #riz #pourtoi #inaugration"
+    },
+    "hashtags": [
+      "#croustyone",
+      "#crousty",
+      "#riz",
+      "#pourtoi",
+      "#inaugration"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "video",
+        "duration": 34.566,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": "18640241413042404",
+    "audio_title": "Original audio",
+    "external_url": "https://www.instagram.com/p/De2HNHWKo_r/",
+    "likes": 34.0,
+    "shares": 2.0,
+    "comments": 0.0,
+    "audio_author": "croustyone_france",
+    "audio_type": "original",
+    "audio_copyrighted": false
+  },
+  {
+    "source_id": "instagram:DdqKxNajSgI",
+    "provider_id": "cnt_6b6e93abc7020d4cccac81e86520",
+    "platform": "instagram",
+    "platform_id": "DdqKxNajSgI",
+    "handle": "poline.shinel",
+    "profile_id": "prf_edafdf7856a65519f2c336a7bfda",
+    "format": "carousel",
+    "published_at": "2026-09-24T05:47:20+00:00",
+    "fetched_at": "2026-11-07T14:39:04.778229+00:00",
+    "views": null,
+    "interactions": 41.0,
+    "followers": 39298.0,
+    "engagement_views_percent": null,
+    "engagement_followers_percent": 0.10433100921166472,
+    "texts": {
+      "caption": "•\n🚩 On a TOUS ce red flag un peu bête, celui qui paraît superficiel mais qui te fait immédiatement penser : « Non. Vraiment, ça va pas être possible. »\n\n😇 Perso, je suis plutôt tolérante… tant qu’on vit sur la même planète. Parce que boîte tous les samedis, Jul à fond dans la voiture et Tasty Crousty au dîner… là, c’est pas possible. \n\n💀 Mais mon vrai red flag non négociable : le manque d’humour. Ou pire : avoir un humour qui ne me fait absolument jamais rire. Je peux accepter beaucoup de choses, mais passer ma vie à expliquer mes vannes à quelqu’un qui me regarde comme un hibou… non merci.\n\n😂 Et vous, c’est quoi votre red flag complètement ridicule mais NON NÉGOCIABLE ? 👇\n-\n#outfit #lookdujour #tenuedujour #mode #fashion style outfit of the day grwm s’habiller vintage leather rock tatouage inked tattoo",
+      "comment.0": "Et si quelqu'un s'asseoit sur tes genoux c'est un red flag ou pas?",
+      "comment.1": "Magnifique en cuir",
+      "comment.2": "🖤🖤🖤🖤🖤🖤❤️🥰👌👍",
+      "comment.3": "😮",
+      "comment.4": "Beautiful",
+      "comment.5": "Pire red flag, pas d'humour! Exactement pareil!!! 😂",
+      "comment.6": "Divinement chic et sexy 😈😈😍😍",
+      "comment.7": "🔥🔥🔥🔥🔥",
+      "comment.8": "It's ❤️ amazing on you. Have I said that before!",
+      "comment.9": "Ça en jette ! 🔥🔥",
+      "comment.10": "Canon . Tu es démoniaquement solaire",
+      "comment.11": "Magnifique robe en cuir qui te va à merveille sache-le. Sinon toi comment vas-tu aujourd’hui dis-moi ?😻",
+      "comment.12": "Tellement classe et magnifique 😍",
+      "comment.13": "😍😍",
+      "comment.14": "Vraiment magnifique avec cette belle robe en cuir . C'est une matière qui vous va parfaitement bien 🔥🔥❤️❤️😍😍"
+    },
+    "hashtags": [
+      "#outfit",
+      "#lookdujour",
+      "#tenuedujour",
+      "#mode",
+      "#fashion"
+    ],
+    "media": [
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      },
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      },
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      },
+      {
+        "transcript": null,
+        "caption": null,
+        "onScreenText": null,
+        "transcriptChunks": null,
+        "frames": [],
+        "type": "image",
+        "duration": null,
+        "tags": [],
+        "transcriptLanguage": null
+      }
+    ],
+    "audio_id": null,
+    "audio_title": null,
+    "external_url": "https://www.instagram.com/p/DdqKxNajSgI/",
+    "likes": 3.0,
+    "shares": 0.0,
+    "comments": 38.0,
+    "audio_author": null,
+    "audio_type": null,
+    "audio_copyrighted": null
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "analyze_all_collected": true,
+  "category_terms": [
+    "crousty",
+    "krousty"
+  ],
+  "topics": [
+    "nouveau",
+    "menu",
+    "sauce",
+    "poulet",
+    "riz"
+  ],
+  "country_code": "FR",
+  "area": {
+    "city": null,
+    "min_latitude": 41.3,
+    "max_latitude": 51.2,
+    "min_longitude": -5.3,
+    "max_longitude": 9.7
+  },
+  "language": "fr",
+  "platforms": [
+    "instagram",
+    "tiktok"
+  ],
+  "current": {
+    "start_at": "2026-10-16T00:00:00Z",
+    "end_at": "2026-10-30T00:00:00Z"
+  },
+  "previous": {
+    "start_at": "2026-09-18T00:00:00Z",
+    "end_at": "2026-10-16T00:00:00Z"
+  },
+  "contents_per_window": 100,
+  "min_sources": 3,
+  "min_creators": 2,
+  "viral_views_per_follower": 10.0,
+  "include_llm": true
+}
