@@ -18,6 +18,23 @@ The API contract is served at `http://localhost:8000/openapi.json` (generate fro
 
 ## Routes
 
+### Vercel startup compatibility
+
+When `VERCEL=1`, the API defaults to `/tmp/viraleat/data` for JSON state and
+`/tmp/viraleat/cache` for provider responses. Local defaults remain `data/` and
+`cache/` under `apps/api`. Explicit `DATA_DIR` and `CACHE_DIR` values override
+these defaults; remove overrides pointing into `/var/task`, or set them to the
+temporary paths above. Redeploy the backend after changing code or environment variables.
+
+This only addresses read-only filesystem errors. Vercel scratch files can disappear
+and are not shared across instances, so polling can return missing analyses and
+the running-analysis guard is not global. Reliable hosted analysis requires durable
+shared storage and a verified execution lifecycle. The current JSON-file backend
+is intended for a single process with persistent disk, as described in
+[HACKATHON.md](HACKATHON.md).
+
+### Endpoints
+
 | Route | Purpose |
 |---|---|
 | `GET /health` | Lists missing configuration (no provider call) |

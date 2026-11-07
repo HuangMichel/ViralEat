@@ -1,3 +1,4 @@
+import os
 from functools import lru_cache
 from pathlib import Path
 from typing import Any, Literal
@@ -5,6 +6,8 @@ from typing import Any, Literal
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 ROOT = Path(__file__).resolve().parents[2]
+# Vercel's application directory is read-only. Scratch files are instance-local.
+STORAGE_ROOT = Path("/tmp/viraleat") if os.environ.get("VERCEL") == "1" else ROOT
 
 
 class ConfigError(RuntimeError):
@@ -25,8 +28,8 @@ class Settings(BaseSettings):
     cors_origins: list[str] = ["http://localhost:3000"]
     max_contents: int = 100
     extraction_concurrency: int = 4
-    cache_dir: Path = ROOT / "cache"
-    data_dir: Path = ROOT / "data"
+    cache_dir: Path = STORAGE_ROOT / "cache"
+    data_dir: Path = STORAGE_ROOT / "data"
 
     def missing(self) -> list[str]:
         required = {

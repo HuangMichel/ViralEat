@@ -37,7 +37,7 @@ The report preserves each corpus's scope. A benchmark result does not automatica
 
 ## 2. Project structure and responsibilities
 
-The paths below are target locations. They do not represent application files that already exist.
+The paths below describe target responsibilities. The initial frontend now exists in `apps/web`; see its [implementation guide](apps/web/README.md) for the implemented screens and unconnected service boundary. Backend paths and the remaining responsibilities are still targets.
 
 | Location | Responsibility |
 |---|---|

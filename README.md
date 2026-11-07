@@ -4,7 +4,9 @@ ViralEat helps restaurant owners examine social content about their restaurant, 
 
 ## Project status
 
-This repository contains MVP specifications and a configuration template. The applications, migrations, configuration loader, startup scripts, and deployments have not been implemented. API routes describe target contracts rather than running endpoints.
+This repository contains MVP specifications, design prototypes, and a frontend implementation in [apps/web](apps/web/README.md). The frontend follows the approved Profile studio design for restaurant profiles, creator profiles, and analytics. It displays unavailable states until a real workspace service is connected; fictional records are limited to prototypes and tests.
+
+The backend, authentication, migrations, configuration loader, and deployments have not been implemented. API routes describe target contracts rather than running endpoints.
 
 ## Documentation
 
@@ -17,10 +19,15 @@ Each document owns the following requirements. Use links to that document instea
 | [API.md](API.md) | HTTP routes, request and response contracts, public states, and command semantics |
 | [.env.example](.env.example) | Environment variable names and proposed configuration defaults |
 | [agents.md](agents.md) | Development workflow and verification instructions |
+| [Frontend guide](apps/web/README.md) | Local frontend commands, implemented screens, validation, and connection boundary |
 
 Resolve conflicts against the latest user decision and update the owning document. Update dependent links or contracts when necessary.
 
-## Prepare configuration
+## Run the frontend
+
+Use the [frontend setup and checks](apps/web/README.md#run-locally). Its unavailable states run without credentials or backend configuration.
+
+## Prepare future integration configuration
 
 1. Copy [.env.example](.env.example) to an ignored local environment file for development.
 2. Put only the `NEXT_PUBLIC_` settings in the frontend environment. Keep provider keys and database credentials in the backend environment.
@@ -40,12 +47,12 @@ Environment variables are proposed application settings. Their presence does not
 ## Implementation order
 
 1. Validate actual Oriane coverage and cost for the selected restaurants and niche. Annotate a small extraction evaluation corpus.
-2. Create both applications, authentication, database schema, access policies, and versioned migrations.
+2. Add the backend application, authentication, database schema, access policies, and versioned migrations. Connect the existing frontend through its typed service boundary.
 3. Implement one complete analysis through collection, validated extraction, and publication of a report with evidence.
 4. Implement the remaining product workflows against [features.md](features.md) and the [HTTP contract](API.md).
 5. Verify integrated behavior, permissions, recovery, and consumption before deployment.
 6. Ask restaurant owners to evaluate whether the reports and proposed actions are useful.
 
-Dependency files and executable commands must be added with the implementation. This repository does not yet provide installation, startup, or application test commands.
+Pinned frontend dependencies, a lockfile, and installation, development, test, and build commands are available in [apps/web](apps/web/README.md). Backend and deployment commands remain unimplemented.
 
 Open integration decisions and technical references are maintained in [architecture.md](architecture.md#14-open-decisions-before-provider-integration).
