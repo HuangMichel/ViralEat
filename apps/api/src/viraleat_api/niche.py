@@ -288,7 +288,7 @@ def _ground(source: Source, quotes: list[ExtractedQuote], evidence: dict[str, Ev
             counter[0] += 1
             continue
         ev = Evidence(id=f"{source.id}#{sum(1 for e in evidence if e.startswith(source.id + '#'))}",
-                      source_id=source.id, channel=q.channel, quote=q.quote)
+                      source_id=source.id, post_url=source.post_url, channel=q.channel, quote=q.quote)
         evidence[ev.id] = ev
         ids.append(ev.id)
     return ids

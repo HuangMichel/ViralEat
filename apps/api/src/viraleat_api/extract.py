@@ -103,7 +103,7 @@ def validate(source: Source, ext: ContentExtraction, restaurants: dict[str, str]
             if not quote_is_grounded(source, q):
                 out.rejected_quotes += 1
                 continue
-            ev = Evidence(id=f"{source.id}#{len(out.evidence)}", source_id=source.id,
+            ev = Evidence(id=f"{source.id}#{len(out.evidence)}", source_id=source.id, post_url=source.post_url,
                           channel=q.channel, quote=q.quote)
             out.evidence.append(ev)
             ids.append(ev.id)

@@ -98,6 +98,8 @@ def test_oriane_normalize_and_auth():
     }
     s = normalize(item)
     assert s.id == "tiktok:123" and s.url is None
+    assert s.post_url == "https://www.tiktok.com/@fake_creator/video/123"  # rebuilt, provider url stays None
+    assert normalize({**item, "platform": "instagram", "platformId": "DcFake_1"}).post_url == "https://www.instagram.com/p/DcFake_1/"
     assert s.metrics.views is None and s.metrics.comments == 0  # null stays null, zero stays zero
     assert s.on_screen_text == "MENU 12€" and s.mentioned_handles == ["fakesmash"]
     assert normalize({**item, "platformId": None}) is None

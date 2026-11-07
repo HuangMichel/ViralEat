@@ -8,13 +8,14 @@ Costs: 1 content search, 1-3 profile searches, ~n + 5 OpenAI calls. Everything i
 
 import argparse
 import asyncio
+import json
 from datetime import UTC, datetime
 from pathlib import Path
 
 from viraleat_api.config import ROOT, get_settings
 from viraleat_api.extract import Extractor
 from viraleat_api.niche import NicheReport, run_study
-from viraleat_api.oriane import OrianeClient, post_url
+from viraleat_api.oriane import OrianeClient
 
 PROFILE_URL = {"tiktok": "https://www.tiktok.com/@{}", "instagram": "https://www.instagram.com/{}/",
                "youtube": "https://www.youtube.com/@{}"}
@@ -35,7 +36,7 @@ def profile_link(r: NicheReport, handle: str) -> str:
 def post_link(r: NicheReport, source_id: str) -> str:
     """`id` as a link to the post (link rebuilt from platform ids; Oriane does not return URLs)."""
     p = next((p for p in r.posts if p.source.id == source_id), None)
-    url = post_url(p.source) if p else None
+    url = p.source.post_url if p else None
     return f"[`{source_id}`]({url})" if url else f"`{source_id}`"
 
 
@@ -118,6 +119,31 @@ def render(r: NicheReport) -> str:
     return "\n".join(L) + "\n"
 
 
+def links_export(r: NicheReport) -> dict:
+    """Links only, for the website: no captions, transcripts or comments (third-party text)."""
+    kept = set(r.kept_post_ids)
+    posts = sorted((p for p in r.posts if p.source.id in kept), key=lambda p: -(p.source.metrics.views or -1))
+    def profile(h):
+        prof = r.profiles.get(h.casefold())
+        return {"handle": h, "display_name": prof.display_name if prof else None,
+                "profile_url": PROFILE_URL.get(prof.platform if prof else "", "{}").format(h) if prof else None}
+    return {
+        "scope": r.scope, "niche_terms": r.niche_terms,
+        "note": "post_url is rebuilt from platform ids; views are observed counters, not unique people or sales.",
+        "posts": [{
+            "rank": i, "id": p.source.id, "platform": p.source.platform, "post_url": p.source.post_url,
+            "author_handle": p.source.author_handle, "author_is_restaurant": p.author_is_restaurant,
+            "views": p.source.metrics.views,
+            "published_at": p.source.published_at.isoformat() if p.source.published_at else None,
+            "restaurants": [profile(h) for h in p.restaurant_handles],
+            "marketing_concepts": p.marketing_concepts, "restaurant_concepts": p.restaurant_concepts,
+        } for i, p in enumerate(posts, 1)],
+        "patterns": [{"title": pat.title, "type": pat.pattern_type,
+                      "post_urls": sorted({r.evidence[e].post_url for e in pat.evidence_ids if r.evidence[e].post_url})}
+                     for pat in r.patterns],
+    }
+
+
 async def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--term", action="append", required=True)
@@ -141,6 +167,8 @@ async def main() -> None:
     (out_dir / f"{stem}.json").write_text(report.model_dump_json(indent=1))
     md = out_dir / f"{stem}.md"
     md.write_text(render(report))
+    links = out_dir / f"{stem}_links.json"
+    links.write_text(json.dumps(links_export(report), ensure_ascii=False, indent=1))
     print(f"Report: {md}\nCollected {report.collected}, about food {report.about_restaurant_food}, "
           f"linked {report.linked_to_restaurant_profile}, patterns {len(report.patterns)}, "
           f"failed {report.extraction_failed}, quotes rejected {report.quotes_rejected}")

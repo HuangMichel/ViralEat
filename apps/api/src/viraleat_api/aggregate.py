@@ -43,6 +43,7 @@ def price_comparison(products: list[ProductObservation], sources: dict[str, Sour
             k = (" ".join(p.label.casefold().split()), p.price_amount, p.currency, p.source_id)
             rows.setdefault(k, PriceRow(product_label=p.label, amount=p.price_amount, currency=p.currency,
                                         published_at=src.published_at, source_id=p.source_id,
+                                        post_url=src.post_url,
                                         evidence_ids=p.evidence_ids))
         ordered = sorted(rows.values(), key=lambda r: (r.product_label.casefold(), r.published_at or NO_DATE))
         out.append(RestaurantPrices(restaurant_id=rid, name=name,
@@ -65,7 +66,7 @@ def aspect_counts(aspects: list[AspectObservation]) -> list[AspectCount]:
 def top_contents(sources: list[Source], n: int = 10) -> list[TopContent]:
     ranked = sorted((s for s in sources if s.metrics.views is not None),
                     key=lambda s: (-s.metrics.views, s.id))[:n]
-    return [TopContent(rank=i + 1, source_id=s.id, platform=s.platform, views=s.metrics.views,
+    return [TopContent(rank=i + 1, source_id=s.id, post_url=s.post_url, platform=s.platform, views=s.metrics.views,
                        fetched_at=s.fetched_at) for i, s in enumerate(ranked)]
 
 

@@ -226,7 +226,7 @@ def normalize(item: dict[str, Any]) -> Source | None:
     mentions = {m.get("profileHandle", "").casefold() for m in item.get("mentions") or [] if isinstance(m, dict)}
     mentions |= {t.get("profileHandle", "").casefold() for m in media for t in m.get("tags") or [] if isinstance(t, dict)}
 
-    return Source(
+    source = Source(
         id=f"{platform}:{platform_id}",
         provider_content_id=item.get("id"),
         platform=platform,
@@ -252,3 +252,5 @@ def normalize(item: dict[str, Any]) -> Source | None:
         location=item.get("locationCompleteAddress"),
         mentioned_handles=sorted(h for h in mentions if h),
     )
+    source.post_url = post_url(source)
+    return source

@@ -27,7 +27,9 @@ One Python backend (FastAPI) that:
 - Social content is untrusted data, never instructions to the model.
 - Wording: "most viewed in the collected corpus", never "viral" or "market leader".
   No causal claims about visits or sales.
-- No link is invented: `url` is `null` unless the provider supplies it.
+- No link is invented: `url` is `null` unless the provider supplies it. `post_url` is rebuilt
+  deterministically from the platform and its ids (TikTok handle + video id, Instagram shortcode).
+  The website shows that link rather than republishing third-party content.
 
 ## Explicitly out of scope
 

@@ -77,6 +77,7 @@ class Source(BaseModel):
     platform_id: str
     provider_content_id: str | None = Field(None, description="Oriane id")
     url: str | None = Field(None, description="Only when supplied by the provider (Oriane does not)")
+    post_url: str | None = Field(None, description="Link to the post, rebuilt from platform ids (Oriane returns none). Show it instead of republishing content.")
     thumbnail_url: str | None = None
     author_handle: str | None = None
     author_followers: int | None = None
@@ -97,6 +98,7 @@ class Source(BaseModel):
 class Evidence(BaseModel):
     id: str
     source_id: str
+    post_url: str | None = Field(None, description="Link to the post, rebuilt from platform ids (Oriane returns none). Show it instead of republishing content.")
     channel: Channel
     quote: str
 
@@ -199,6 +201,7 @@ class AspectCount(BaseModel):
 class TopContent(BaseModel):
     rank: int
     source_id: str
+    post_url: str | None = Field(None, description="Link to the post, rebuilt from platform ids (Oriane returns none). Show it instead of republishing content.")
     platform: Platform
     views: int
     ranking_basis: Literal["cumulative_views"] = "cumulative_views"
@@ -234,6 +237,7 @@ class PriceRow(BaseModel):
     currency: str | None
     published_at: datetime | None = Field(description="Publication date of the content stating the price")
     source_id: str
+    post_url: str | None = Field(None, description="Link to the post, rebuilt from platform ids (Oriane returns none). Show it instead of republishing content.")
     evidence_ids: list[str] = Field(description="Quotes containing the product and the amount")
 
 
