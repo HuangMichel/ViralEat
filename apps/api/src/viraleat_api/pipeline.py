@@ -44,6 +44,7 @@ async def run(analysis: Analysis, settings: Settings, store: Store) -> None:
         # 1. collect (deduplicated by platform:platform_id)
         sources: dict[str, Source] = {}
         for q in queries:
+            # API CALL: Oriane content search, one per restaurant (benchmark) or one for the market (cached).
             for s in await oriane.search(q, per_query):
                 sources.setdefault(s.id, s)
             analysis.progress.collected = len(sources)
@@ -59,6 +60,7 @@ async def run(analysis: Analysis, settings: Settings, store: Store) -> None:
             nonlocal failed
             async with sem:
                 try:
+                    # API CALL: OpenAI extraction, one per collected post (cached).
                     v = extract.validate(s, await extractor.extract(s, restaurants), restaurants)
                 except (ExtractionError, openai.APIError) as exc:
                     log.warning("extraction failed for %s: %s", s.id, type(exc).__name__)
@@ -115,6 +117,7 @@ async def run(analysis: Analysis, settings: Settings, store: Store) -> None:
         store.save_analysis(analysis)
         goals = getattr(req, "goals", [])
         constraints = getattr(req, "constraints", [])
+        # API CALL: OpenAI synthesis of at most 3 actions (cached).
         report.opportunities = await synthesize(extractor, report, goals, constraints)
 
         analysis.report = report

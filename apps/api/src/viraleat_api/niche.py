@@ -238,6 +238,7 @@ async def _parse(extractor: Extractor, schema: type[BaseModel], system: str, pay
     k = cache.key(PROMPT_VERSION, namespace, s.openai_model, s.openai_reasoning_effort, system, user_input)
     if (hit := cache.get(s.cache_dir, "openai", k)) is not None:
         return schema.model_validate(hit)
+    # API CALL: OpenAI (paid: tokens). Single entry point for every niche-study LLM call, reached only on a cache miss.
     resp = await extractor.client.responses.parse(
         model=s.openai_model,
         input=[{"role": "system", "content": system}, {"role": "user", "content": user_input}],
@@ -262,6 +263,7 @@ async def classify_profiles(extractor: Extractor, raws: list[dict]) -> dict[str,
         batch = raws[i:i + 20]
         payload = {"profiles": [{"handle": r.get("handle"), "display_name": r.get("displayName"),
                                  "bio": r.get("bio"), "followers": r.get("followersCount")} for r in batch]}
+        # API CALL: OpenAI, one call per batch of 20 profiles (via _parse, cached).
         verdicts = await _parse(extractor, ProfileBatch, PROFILE_SYSTEM, payload, "profiles")
         by_handle = {str(r.get("handle", "")).casefold(): r for r in batch}
         for v in verdicts.profiles:
@@ -326,12 +328,15 @@ async def run_study(oriane: OrianeClient, extractor: Extractor, terms: list[str]
     """Fetch the `fetch_n` most-viewed posts, then keep the `n_posts` most-viewed RELEVANT ones."""
     warnings: list[str] = []
     fetch_n = min(100, max(n_posts, fetch_n or n_posts))  # Oriane page limit is 100
+    # API CALL: Oriane content search, 1 request for the fetch_n most-viewed posts (cached).
     raw = await oriane.search_raw(market_query(terms, city, platforms, languages=["fr"]), limit=fetch_n)
     sources = [s for s in (normalize(i) for i in extract_items(raw)) if s]
 
     # 2. profiles of authors + tagged accounts
     handles = {s.author_handle for s in sources if s.author_handle} | {h for s in sources for h in s.mentioned_handles}
+    # API CALL: Oriane profile search for authors and tagged accounts (cached).
     raw_profiles = await oriane.search_profiles(sorted(handles), platforms)
+    # API CALL: OpenAI, classifies which profiles are restaurant accounts (cached).
     profiles = await classify_profiles(extractor, raw_profiles)
     found_handles = {str(p.get("handle", "")).casefold() for p in raw_profiles}
     if missing := len({h.casefold() for h in handles} - found_handles):
@@ -353,6 +358,7 @@ async def run_study(oriane: OrianeClient, extractor: Extractor, terms: list[str]
             "tagged_location": s.location, "comments": s.comments}}
         async with sem:
             try:
+                # API CALL: OpenAI, one analysis per post, up to EXTRACTION_CONCURRENCY in parallel (cached).
                 return s, await _parse(extractor, PostAnalysis, POST_SYSTEM, payload, "post")
             except Exception as exc:  # report and continue; never fabricate a replacement
                 failed += 1
@@ -368,8 +374,10 @@ async def run_study(oriane: OrianeClient, extractor: Extractor, terms: list[str]
     if unlinked_names:
         body = {"operator": "and", "filters": {"platform": {"includes": platforms},
                 "displayName": {"includesExactly": {"values": unlinked_names[:100], "operator": "or"}}}}
+        # API CALL: Oriane profile search by display name for restaurants named without a known profile (cached).
         found = extract_items(await oriane.search_raw(body, limit=100, sort="followersCount:desc",
                                                       path="/rest/profiles/search"))
+        # API CALL: OpenAI, classifies the newly found profiles (cached).
         new = await classify_profiles(extractor, [r for r in found if r.get("handle", "").casefold() not in profiles])
         profiles.update(new)
 
@@ -478,6 +486,7 @@ async def run_study(oriane: OrianeClient, extractor: Extractor, terms: list[str]
     )
 
     # 7. synthesis, validated
+    # API CALL: OpenAI, 1 pattern-synthesis call (cached).
     report.patterns = await synthesize_patterns(extractor, report)
     return report
 

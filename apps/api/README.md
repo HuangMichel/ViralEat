@@ -33,6 +33,9 @@ The API contract is served at `http://localhost:8000/openapi.json` (generate fro
 | `scripts/probe_extract.py "Name"` | Runs extraction on a restaurant's results | up to `--limit` OpenAI calls |
 | `scripts/niche_study.py --term ...` | Most-viewed posts of a niche → restaurant profiles → patterns, Markdown report | 1 search, 1-3 profile searches, ~fetch OpenAI calls |
 
+Every line that calls Oriane or OpenAI is marked `# API CALL` (`grep -rn "# API CALL" src scripts`).
+Only `oriane.py` (`http.post`) and the three `responses.parse` calls actually hit the network.
+
 Provider responses are cached in `cache/` and reports are written to `reports/`. Both are git-ignored:
 they contain third-party content whose republication rights are not confirmed.
 

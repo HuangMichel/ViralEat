@@ -139,6 +139,7 @@ class OrianeClient:
         unique = sorted({h.lstrip("@").casefold() for h in handles if h})
         for i in range(0, len(unique), 100):
             batch = unique[i:i + 100]
+            # API CALL: Oriane profile search, one request per 100 handles (cached).
             raw = await self.search_raw(profiles_by_handle_query(batch, platforms), limit=100,
                                         sort="followersCount:desc", path=PROFILES_PATH)
             out.extend(extract_items(raw))
@@ -152,6 +153,7 @@ class OrianeClient:
             return hit
         for attempt in range(3):
             try:
+                # API CALL: Oriane. The ONLY place an HTTP request is sent to Oriane (paid: consumes search credits). Reached only on a cache miss.
                 resp = await self.http.post(path, params=params, json=body)
             except httpx.TransportError as exc:
                 if attempt == 2:
@@ -171,6 +173,7 @@ class OrianeClient:
         offset = 0
         while len(sources) < max_items:
             limit = min(PAGE_SIZE, max_items - len(sources))
+            # API CALL: Oriane content search, one request per page of PAGE_SIZE results (cached).
             items = extract_items(await self.search_raw(body, limit=limit, offset=offset))
             sources.extend(s for s in (normalize(i) for i in items) if s is not None)
             if len(items) < limit:

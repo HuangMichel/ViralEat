@@ -29,6 +29,7 @@ async def main() -> None:
     client = OrianeClient(settings)
     try:
         body = restaurant_query(args.name, args.handle, [args.platform], languages=languages)
+        # API CALL: Oriane, 1 content search (cached: re-running with the same arguments is free).
         raw = await client.search_raw(body, limit=args.limit)
     finally:
         await client.aclose()

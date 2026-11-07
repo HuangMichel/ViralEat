@@ -27,6 +27,7 @@ async def main() -> None:
     restaurants = {"r0": args.name}
     oriane = OrianeClient(settings)
     try:
+        # API CALL: Oriane, 1 content search (cached).
         raw = await oriane.search_raw(restaurant_query(args.name, [], [args.platform], languages=["fr"]), limit=args.limit)
     finally:
         await oriane.aclose()
@@ -38,6 +39,7 @@ async def main() -> None:
     async def one(s):
         async with sem:
             try:
+                # API CALL: OpenAI, one extraction per post (cached).
                 return s, await extractor.extract(s, restaurants), None
             except (ExtractionError, Exception) as exc:  # probe: report every failure kind
                 return s, None, f"{type(exc).__name__}: {str(exc)[:200]}"

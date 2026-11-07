@@ -52,6 +52,7 @@ async def synthesize(extractor: Extractor, report: Report, goals: list[str], con
     if (hit := cache.get(s.cache_dir, "openai", k)) is not None:
         parsed = OpportunityList.model_validate(hit)
     else:
+        # API CALL: OpenAI (paid: tokens). One synthesis per benchmark/market report, reached only on a cache miss.
         resp = await extractor.client.responses.parse(
             model=s.openai_model,
             input=[{"role": "system", "content": SYSTEM}, {"role": "user", "content": user_input}],

@@ -154,6 +154,7 @@ class Extractor:
         if (hit := cache.get(self.settings.cache_dir, "openai", k)) is not None:
             return ContentExtraction.model_validate(hit)
 
+        # API CALL: OpenAI (paid: tokens). One extraction per post, reached only on a cache miss.
         resp = await self.client.responses.parse(
             model=self.settings.openai_model,
             input=[{"role": "system", "content": SYSTEM}, {"role": "user", "content": user_input}],
