@@ -144,6 +144,38 @@ def links_export(r: NicheReport) -> dict:
     }
 
 
+def results_export(r: NicheReport) -> dict:
+    """Analysis results for the website: aggregates, patterns and the short cited quotes only.
+    No full captions, transcripts, comments or bios."""
+    cited = {e for pat in r.patterns for e in pat.evidence_ids}
+    cited |= {e for c in r.marketing + r.restaurant_concepts for e in c.example_evidence_ids}
+    def quote(e):
+        ev = r.evidence[e]
+        return {"id": e, "source_id": ev.source_id, "post_url": ev.post_url, "channel": ev.channel, "quote": ev.quote}
+    linked = {h.casefold() for s in r.restaurants for h in [s.handle]}
+    return {
+        "scope": r.scope, "niche_terms": r.niche_terms, "model": r.model, "prompt_version": r.prompt_version,
+        "disclaimer": "Views are observed counters on the most-viewed collected posts, not unique people, visits or "
+                      "sales. Results are not a random sample of the market. post_url is rebuilt from platform ids.",
+        "coverage": {"collected": r.collected, "relevant_found": r.relevant_found, "analyzed": r.about_restaurant_food,
+                     "linked_to_restaurant_profile": r.linked_to_restaurant_profile, "paris_located": r.paris_located,
+                     "platforms": r.platforms, "extraction_failed": r.extraction_failed,
+                     "quotes_rejected": r.quotes_rejected, "warnings": r.warnings},
+        "patterns": [{**pat.model_dump(exclude={"evidence_ids"}), "evidence": [quote(e) for e in pat.evidence_ids]}
+                     for pat in r.patterns],
+        "by_author_type": [a.model_dump() for a in r.by_author_type],
+        "marketing_concepts": [{**c.model_dump(exclude={"example_evidence_ids"}),
+                                "examples": [quote(e) for e in c.example_evidence_ids]} for c in r.marketing],
+        "restaurant_concepts": [{**c.model_dump(exclude={"example_evidence_ids"}),
+                                 "examples": [quote(e) for e in c.example_evidence_ids]} for c in r.restaurant_concepts],
+        "restaurants": [{**s.model_dump(), "profile_url": PROFILE_URL.get(
+                            (r.profiles.get(s.handle.casefold()).platform if r.profiles.get(s.handle.casefold()) else ""),
+                            "{}").format(s.handle)} for s in r.restaurants],
+        "posts": links_export(r)["posts"],
+        "quotes_cited": len(cited), "restaurant_profiles_linked": len(linked),
+    }
+
+
 async def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--term", action="append", required=True)
@@ -167,6 +199,8 @@ async def main() -> None:
     (out_dir / f"{stem}.json").write_text(report.model_dump_json(indent=1))
     md = out_dir / f"{stem}.md"
     md.write_text(render(report))
+    (out_dir / f"{stem}_results.json").write_text(
+        json.dumps(results_export(report), ensure_ascii=False, indent=1))
     links = out_dir / f"{stem}_links.json"
     links.write_text(json.dumps(links_export(report), ensure_ascii=False, indent=1))
     print(f"Report: {md}\nCollected {report.collected}, about food {report.about_restaurant_food}, "
